@@ -1,93 +1,75 @@
 import React from "react";
-import "../../Estilos/styleHabilidades.css";
+import "../../Estilos/styleHabilidades.css"; // Importe o arquivo CSS
+import imagemHTML from '../../Imagens/html-5-svgrepo-com.svg'
+import imagemCSS from '../../Imagens/css-svgrepo-com.svg'
+import imagemJavaScript from '../../Imagens/javascript-svgrepo-com.svg'
+import imagemTypeScript from '../../Imagens/typescript-official-svgrepo-com.svg'
+import imagemJava from '../../Imagens/java-svgrepo-com.svg'
+import imagemPhp from '../../Imagens/php-svgrepo-com.svg'
+import imagemReact from '../../Imagens/react-1-logo-svgrepo-com.svg'
+import imagemElectron from '../../Imagens/electron-svgrepo-com.svg'
+import imagemMysql from '../../Imagens/mysql-svgrepo-com.svg'
+import imagemGitHub from '../../Imagens/github-142-svgrepo-com.svg'
+import imagemGit from '../../Imagens/git-svgrepo-com.svg'
+import imagemFigma from '../../Imagens/figma-svgrepo-com.svg'
+import imagemBlender from '../../Imagens/blender-svgrepo-com.svg'
+import imagemUnrealEngine from '../../Imagens/unreal-engine-svgrepo-com.svg'
+import imagemVsCode from '../../Imagens/vs-code-svgrepo-com.svg'
 
-//Imagens
-import html5 from "../../Imagens/html-5.png";
-
-class HabilidadeDesc extends React.Component {
+class Linguagem extends React.Component {
   render() {
-    const { nome, dominio, fundo } = this.props;
-    const divStyle = {
-      width: dominio + "%",
-      background: fundo,
-      color: "white",
-      textAlign: "center",
-      lineHeight: "30px", // Altura da barra de progresso
+    const estilo = {
+      backgroundColor: `${this.props.corFundo}`,
     };
 
     return (
-      <div className="habilidade">
-        <div className="barra">
-          <div className="progresso" style={divStyle}>
-            {nome + "          " + dominio + "%"}
-          </div>
-        </div>
+      <div id="linguagenHabilidades">
+        <img id="imagenLinguagemhabilidades" style={estilo} src={this.props.imagem} alt={this.props.linguagem} />
+        <h1 id="nomeLinguagemHabilidades">{this.props.linguagem}</h1>
+        <h1 id="descricaoLinguagemHabilidades">Ver mais...</h1>
       </div>
     );
   }
 }
 
-class Habilidades extends React.Component {
-  render() {
-    return (
-      <div className="Habilidades">
-        <div className="conteudoHabilidades">
-          <h1 id="titulo">Minhas Habilidades</h1>
-          <div id="habilidades">
-            <HabilidadeDesc
-              fundo="linear-gradient(to right, #0acffe 0%, #495aff 100%)"
-              imagen={html5}
-              nome="HTML"
-              dominio={95}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-            <HabilidadeDesc
-              fundo="linear-gradient(111.8deg, rgb(0, 104, 155) 19.8%, rgb(0, 173, 239) 92.1%)"
-              imagen={html5}
-              nome="CSS"
-              dominio={90}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-            <HabilidadeDesc
-              fundo="linear-gradient(-225deg, #3D4E81 0%, #5753C9 48%, #6E7FF3 100%)"
-              imagen={html5}
-              nome="JavaScript"
-              dominio={62}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-            <HabilidadeDesc
-              fundo="linear-gradient(111.8deg, rgb(0, 104, 155) 19.8%, rgb(0, 173, 239) 92.1%)"
-              imagen={html5}
-              nome="TypeScript"
-              dominio={60}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-            <HabilidadeDesc
-              fundo="radial-gradient(circle at 10% 20%, rgb(7, 121, 222) 0%, rgb(20, 72, 140) 90%)"
-              imagen={html5}
-              nome="React.js"
-              dominio={50}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-            <HabilidadeDesc
-              fundo="linear-gradient(115.7deg, rgb(3, 79, 135) 6.2%, rgb(0, 184, 214) 112.9%)"
-              imagen={html5}
-              nome="Java"
-              dominio={35}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-            <HabilidadeDesc
-              fundo="radial-gradient(902px at 10% 20%, rgb(18, 50, 90) 0%, rgb(207, 199, 252) 100.2%)"
-              imagen={html5}
-              nome="SQL"
-              dominio={55}
-            />
-            <img id="imagenLinguagem" src={html5} alt="" />
-          </div>
+function TituloInfo(props) {
+  const TituloInfoStyle = { 
+    color: `${props.cor}`
+  }
+  return <h1 style={TituloInfoStyle} id="ttituloHabilidades">{props.titulo}</h1>;
+}
+
+const Habilidades = () => {
+  return (
+    <div id="containerHabilidades">
+      <div id="painelHabilidades">
+      <TituloInfo cor="white" titulo="Linguages"/>
+        <div id="linguagensHabilidades">
+          <Linguagem imagem={imagemHTML} corFundo="oarangered" linguagem="HTML" />
+          <Linguagem imagem={imagemCSS} corFundo="lightBlue" linguagem="CSS" />
+          <Linguagem imagem={imagemJavaScript} corFundo="rgb(247,223,30)" linguagem="JavaScript" />
+          <Linguagem imagem={imagemTypeScript} corFundo="rgb(49,120,198)" linguagem="TypeScript" />
+          <Linguagem imagem={imagemJava} corFundo="white" linguagem="Java" />
+          <Linguagem imagem={imagemPhp} corFundo="#777bb3" linguagem="PHP" />
+        </div>
+
+        <TituloInfo cor="white" titulo="Frameworks/ Bibliotecas/ Base de dados"/>
+        <div id="framworksHabilidades">
+          <Linguagem imagem={imagemReact} corFundo="#222222" linguagem="React.js & React.Ts" />
+          <Linguagem imagem={imagemElectron} corFundo="white" linguagem="Electron" />
+          <Linguagem imagem={imagemMysql} corFundo="white" linguagem="mySQL" />
+        </div>
+        <TituloInfo cor="white" titulo="Ferramentas"/>
+        <div id="ferramentasHabilidades">
+          <Linguagem imagem={imagemGitHub} corFundo="white" linguagem="GitHub" />
+          <Linguagem imagem={imagemGit} corFundo="white" linguagem=".Git" />
+          <Linguagem imagem={imagemFigma} corFundo="white" linguagem="Figmat" />
+          <Linguagem imagem={imagemBlender} corFundo="white" linguagem="Blender" />
+          <Linguagem imagem={imagemUnrealEngine} corFundo="white" linguagem="Unreal Engine" />
         </div>
       </div>
-    );
-  }
-}
+    </div>
+  );
+};
 
 export default Habilidades;

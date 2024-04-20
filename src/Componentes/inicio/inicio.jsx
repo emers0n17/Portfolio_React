@@ -1,10 +1,10 @@
 import React from "react";
 
 //A importar as imanges
-import facebook from "../../Imagens/facebook.png";
-import instagram from "../../Imagens/instagram.png";
-import github from "../../Imagens/github-sign.png";
-import linkedin from "../../Imagens/linkedin.png";
+import facebook from "../../Imagens/facebook-color-svgrepo-com.svg";
+import instagram from "../../Imagens/instagram-1-svgrepo-com.svg";
+import github from "../../Imagens/github-142-svgrepo-com.svg";
+import linkedin from "../../Imagens/linkedin-svgrepo-com.svg";
 import correto from "../../Imagens/correto.png";
 import reactLogo from "../../Imagens/react.png";
 
@@ -15,7 +15,7 @@ function Menu() {
   return (
     <div id="menu">
       <li>
-        <a href="#container">Inicio</a>
+        <a href="#containerInicio">Inicio</a>
       </li>
       <li>
         <a href="#">Sobre</a>
@@ -77,7 +77,7 @@ class Inicio extends React.Component {
     return (
       <div id="inicio">
         <Menu />
-        <div id="container">
+        <div id="containerInicio">
           <div id="perfil">
             <Perfil />
             <Dados />
