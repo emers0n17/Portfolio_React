@@ -6,6 +6,8 @@
   justify-content: center;
   align-items: center;
   background-color: rgb(33, 31, 31);
+  border-bottom: 2px solid #E90064;
+  border-top: 2px solid #E90064;
 }
 
 /*Conainer onde ira fiacar o conteudo*/
@@ -22,8 +24,8 @@
 #cardSobre {
   width: 25vw;
   height: 90%;
-  background-color: white;
-  box-shadow: 0 0 2px rgb(193, 191, 191);
+  background-color: black;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
   border-radius: 10px;
   transition: 0.3s;
   display: flex;
@@ -42,14 +44,15 @@
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
 }
 
 #cardSobreFotoPerfil {
   width: 90%;
   height: 25vh;
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 2px rgb(193, 191, 191);
+  background-color: black;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
   display: flex;
   justify-content: flex-start;
   align-items: center;
@@ -80,13 +83,23 @@
   width: 4.5vw;
 }
 
-#cardContactoNome {
-  height: 7vh;
+#cardSobreText {
+  width: 95%;
+  height: 8vh;
+  background-color: black;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+  border-radius: 8px;
+  color: white;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  font-size: clamp(0.8rem, 0.3em + 1rem, 1.5rem);
+  padding-left: 20px;
+  font-family: 'Poppins', sans-serif;
+}
+
+#cardSobreText:nth-child(1) {
+  color: rgb(49, 120, 198);
+  font-weight: 800;
 }
 
 #cardSobreContactos {
@@ -99,6 +112,8 @@
   justify-content: space-around;
   align-items: center;
   background-color: white;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 
@@ -107,18 +122,18 @@
   width: 90%;
   height: 40vh;
   border-radius: 8px;
-  background-color: white;
-  box-shadow: 0 0 2px rgb(193, 191, 191);
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: repeat(4, 5vw);
+  background-color: black;
+  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 
 #textoLocSobre {
   width: 95%;
   height: 30vh;
-  background-color: #161b22;
   border-radius: 8px;
   display: flex;
   flex-direction: column;
@@ -129,24 +144,36 @@
 
 #tituloTextoSobre {
   color: rgb(49, 120, 198);
-  font-size: clamp(1.5rem, 1vw + 1rem, 2.5rem);
+  font-size: clamp(1rem, 1vw + 0.3rem, 1.5rem);
   font-family: "Poppins", sans-serif;
   width: 100%;
   background-color: #0d1117;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
   height: 10vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #textoSobre {
   text-align: justify;
   font-family: ui-monospace;
-  font-size: 12px;
+  font-size: clamp(10px, 15px, 20px);
   height: 20vh;
   letter-spacing: 0;
   font-style: normal;
   font-weight: 400;
   color: rgb(230, 237, 243);
-  padding: 10px;
+  padding: 20px;
+  background-color: #161b22;
+  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
+
+
 
 #cardSobreFoto {
   width: 20vh;
