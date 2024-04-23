@@ -5,6 +5,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: rgb(33, 31, 31);
 }
 
 /*Conainer onde ira fiacar o conteudo*/
@@ -21,7 +22,7 @@
 #cardSobre {
   width: 25vw;
   height: 90%;
-  background-color: rgb(33, 31, 31);
+  background-color: white;
   box-shadow: 0 0 2px rgb(193, 191, 191);
   border-radius: 10px;
   transition: 0.3s;
@@ -31,20 +32,23 @@
   align-items: center;
 }
 
-#cardSobre:hover {
-    box-shadow: 0 0 10px #E90064;
-}
-
+/*Descricao onde esta o conteudo do sobre*/
 #descricaoSobre {
   width: 40vw;
   height: 90%;
+  background-color: black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #cardSobreFotoPerfil {
   width: 90%;
   height: 25vh;
   border-radius: 10px;
-  background-color: rgb(33, 31, 31);
+  background-color: white;
   box-shadow: 0 0 2px rgb(193, 191, 191);
   display: flex;
   justify-content: flex-start;
@@ -55,21 +59,25 @@
   align-items: center;
 }
 
-#cardSobreInfo {
-  width: 90%;
-  height: 40vh;
-  border-radius: 10px;
-  background-color: rgb(33, 31, 31);
-  box-shadow: 0 0 2px rgb(193, 191, 191);
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
 
 #cardContactoImg {
-  width: 7vh;
   border-radius: 10px;
+}
+
+#cardContactoImg:nth-child(1) {
+  width: 4vw;
+}
+
+#cardContactoImg:nth-child(2) {
+  width: 4.5vw;
+}
+
+#cardContactoImg:nth-child(3) {
+  width: 4vw;
+}
+
+#cardContactoImg:nth-child(4) {
+  width: 4.5vw;
 }
 
 #cardContactoNome {
@@ -83,19 +91,66 @@
 
 #cardSobreContactos {
   width: 95%;
-  height: 8vh;
+  height: 5vw;
   border-radius: 10px;
-  background-color: white;
-  box-shadow: 0 0 2px rgb(193, 191, 191);
   color: black;
-  display: grid;
-  grid-template-columns: repeat(2, 8vh calc(100% - 8vh));
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  background-color: white;
 }
 
+
+/*Div onde estarao as informacaoes do card*/
+#cardSobreInfo {
+  width: 90%;
+  height: 40vh;
+  border-radius: 8px;
+  background-color: white;
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 5vw);
+}
+
+
+#textoLocSobre {
+  width: 95%;
+  height: 30vh;
+  background-color: #161b22;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+#tituloTextoSobre {
+  color: rgb(49, 120, 198);
+  font-size: clamp(1.5rem, 1vw + 1rem, 2.5rem);
+  font-family: "Poppins", sans-serif;
+  width: 100%;
+  background-color: #0d1117;
+  height: 10vh;
+}
+
+#textoSobre {
+  text-align: justify;
+  font-family: ui-monospace;
+  font-size: 12px;
+  height: 20vh;
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 400;
+  color: rgb(230, 237, 243);
+  padding: 10px;
+}
 
 #cardSobreFoto {
   width: 20vh;
   height: 20vh;
-  background-color: white;
+  background-color: rgb(33, 31, 31);
   border-radius: 50%;
 }
