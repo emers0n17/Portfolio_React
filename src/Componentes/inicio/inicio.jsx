@@ -15,10 +15,10 @@ function Menu() {
   return (
     <div id="menu">
       <li>
-        <a href="#containerInicio">Inicio</a>
+        <a href="#menu">Inicio</a>
       </li>
       <li>
-        <a href="#">Sobre</a>
+        <a href="#painelHabilidades">Habilidades</a>
       </li>
       <li>
         <a href="#">Ferramentas</a>
@@ -29,6 +29,22 @@ function Menu() {
       <li>
         <a href="#">Constactos</a>
       </li>
+    </div>
+  );
+}
+
+function InfoInicio() {
+  return <div id="inforInicio"></div>;
+}
+
+function InfoInicioReact() {
+  return (
+    <div id="inforInicio">
+        <h1 id="tituloInicioReact">
+          Este portfolio doi desenvolvido com ajuda do React, ela e uma
+          biblioteca do javascript que nos permite criar aplicacaoes web single
+          page utilizando componetes.
+        </h1>
     </div>
   );
 }
@@ -79,8 +95,14 @@ class Inicio extends React.Component {
         <Menu />
         <div id="containerInicio">
           <div id="perfil">
+            {/*
             <Perfil />
             <Dados />
+            */}
+            <InfoInicio />
+            <InfoInicioReact />
+            <InfoInicio />
+            <InfoInicio />
           </div>
         </div>
       </div>

@@ -1,0 +1,101 @@
+/*Conteiner principal da secao*/
+#sobreContainer {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Conainer onde ira fiacar o conteudo*/
+#sobrePainel {
+  width: 90%;
+  height: 90vh;
+  border-radius: 10px;
+  display: flex;
+  display: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cardSobre {
+  width: 25vw;
+  height: 90%;
+  background-color: rgb(33, 31, 31);
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  border-radius: 10px;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cardSobre:hover {
+    box-shadow: 0 0 10px #E90064;
+}
+
+#descricaoSobre {
+  width: 40vw;
+  height: 90%;
+}
+
+#cardSobreFotoPerfil {
+  width: 90%;
+  height: 25vh;
+  border-radius: 10px;
+  background-color: rgb(33, 31, 31);
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#cardSobreInfo {
+  width: 90%;
+  height: 40vh;
+  border-radius: 10px;
+  background-color: rgb(33, 31, 31);
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#cardContactoImg {
+  width: 7vh;
+  border-radius: 10px;
+}
+
+#cardContactoNome {
+  height: 7vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: clamp(0.8rem, 0.3em + 1rem, 1.5rem);
+}
+
+#cardSobreContactos {
+  width: 95%;
+  height: 8vh;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  color: black;
+  display: grid;
+  grid-template-columns: repeat(2, 8vh calc(100% - 8vh));
+}
+
+
+#cardSobreFoto {
+  width: 20vh;
+  height: 20vh;
+  background-color: white;
+  border-radius: 50%;
+}

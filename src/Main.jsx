@@ -2,6 +2,8 @@ import React from "react";
 import Inicio from "./Componentes/inicio/inicio";
 import Habilidades from "./Componentes/habilidades/habilidades";
 import './Estilos/styleMain.css'
+import Sobre from "./Componentes/sobre/sobre";
+
 
 
 //Componetes para os titulos
@@ -16,7 +18,9 @@ class Main extends React.Component {
     return (
       <>
         <Inicio />
-        <TituloSecao desc="Habilidades"/>
+        <TituloSecao desc="Sobre min"/>
+        <Sobre />
+        <TituloSecao desc="Minhas habilidades"/>
         <Habilidades />
       </>
     );

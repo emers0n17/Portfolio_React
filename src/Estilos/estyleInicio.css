@@ -28,6 +28,17 @@
   padding: 13px;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 5px rgb(93, 91, 91);
+  row-gap: 20px;
+  column-gap: 20px;
+}
+
+#inforInicio {
+  background-color: rgb(33, 31, 31);
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  border-radius: 10px;
 }
 
 #minhaImagen {
@@ -39,16 +50,18 @@
 #dados1 {
   width: 45vw;
   height: 75vh;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
+  background-color: rgb(27, 26, 26);
+  box-shadow: 0 0 5px rgb(93, 91, 91);
 }
 
 #apresentacaoTxt {
-  background-color: #03001C;
+  background-color: orangered;
+  box-shadow: 0 0 5px rgb(93, 91, 91);
   width: 90%;
   height: 15vh;
   border-radius: 10px;
@@ -61,10 +74,11 @@
 }
 
 #sobreTxt {
-  background-color: #03001C;
+  background-color: black;
+  box-shadow: 0 0 5px rgb(93, 91, 91);
   width: 90%;
   border-radius: 10px;
-  height: 55vh;
+  height: 40vh;
   text-align: justify;
   font-size: clamp(12px, 13px, 20px);
   line-height: clamp(100%, 40px, 33px);
@@ -76,12 +90,12 @@
 }
 
 #spamAzul {
-  color: rgb(135, 6, 255);
+  color: rgb(0, 174, 255);
   font-weight: 700;
 }
 
 #spamVermelho {
-  color: rgb(242, 80, 59);
+  color: tomato;
   font-weight: 700;
 }
 
@@ -89,11 +103,13 @@
 #menu {
   width: 80%;
   height: 10vh;
-  background-color: white;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 5px rgb(93, 91, 91);
   border-radius: 12px;
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   overflow: hidden;
+  padding: 3px;
 }
 
 #menu li{
@@ -106,7 +122,7 @@
 
 #menu li a{
   text-decoration: none;
-  color: rgb(66, 65, 65);
+  color: white;
   font-family: 'Poppins', sans-serif;
   font-size: clamp(10px, 15px, 20px);
   font-weight: 600;
@@ -116,14 +132,14 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  transition: 0.3s;
+  transition: 0.2s;
   user-select: none;
 }
 
 #menu li a:hover {
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 0 2px rgb(125, 125, 125);
   font-size: clamp(11px, 16px, 21px);
-  color: black;
+  color: white;
   font-weight: 700;
 }
 
@@ -137,6 +153,7 @@
   box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
   border-radius: 12px;
   width: 45vh;
+  background-color: rgb(255, 255, 255);
 }
 
 h1 {
@@ -147,7 +164,7 @@ h1 {
 }
 
 #contactos {
-  width: 22vh;
+  width: 80%;
   height: 22vh;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -190,4 +207,10 @@ h1 {
   to {
     transform: rotate(360deg);
   }
+}
+
+/*Titulo do componenteno inicio*/
+#tituloInicioReact {
+  color: white;
+  font-size: clamp(1em, 1em + 1vw, 1em);
 }
