@@ -37,17 +37,49 @@ function InfoInicio() {
   return <div id="inforInicio"></div>;
 }
 
-function InfoInicioReact() {
+function InfoInicioReact2() {
+  const nome = "> emers0n17";
+
+  const items = [
+    "- 👋 Olá, eu sou @Emerson Covane...",
+    "- 😄 Visite meu perfil: ...",
+    "- ⚡ Desenvolvedor web: ...",
+    "- 🌱 Estrou sempre a aprender...",
+    "- 👀 De um feedback..."
+  ]
+
   return (
     <div id="inforInicio">
-        <h1 id="tituloInicioReact">
-          Este portfolio doi desenvolvido com ajuda do React, ela e uma
-          biblioteca do javascript que nos permite criar aplicacaoes web single
-          page utilizando componetes.
-        </h1>
+      <h1 id="tituloInicioReact">
+        <h1 id="tituloInicioReactUser">{nome}</h1>
+        <ol type="1" id="listaInicio">
+          <p id="listaInicioItem">{items[0]}</p>
+          <p id="listaInicioItem">{items[1]}</p>
+          <p id="listaInicioItem">{items[2]}</p>
+          <p id="listaInicioItem">{items[3]}</p>
+          <p id="listaInicioItem">{items[4]}</p>
+        </ol>
+      </h1>
     </div>
   );
 }
+
+
+function InfoInicioReact1() {
+  const txtApresentacao = (
+    <>
+      Olá, seja bem-vindo ao meu portfólio pessoal, aqui você pode ver a minha trajetória como desenvolvedor, as minhas habilidades e alguns dos meus projetos.<br/>
+      <button id="btnApresentacao">Comecar!</button>
+    </>
+  );
+  return (
+    <div id="inforInicio">
+      <h1 id="tituloRecepcao">Bem-vindo</h1>
+      <p id="textoRecepcao">{txtApresentacao}</p>
+    </div>
+  );
+}
+
 
 function Perfil() {
   return (
@@ -99,8 +131,8 @@ class Inicio extends React.Component {
             <Perfil />
             <Dados />
             */}
-            <InfoInicio />
-            <InfoInicioReact />
+            <InfoInicioReact1 />
+            <InfoInicioReact2 />
             <InfoInicio />
             <InfoInicio />
           </div>

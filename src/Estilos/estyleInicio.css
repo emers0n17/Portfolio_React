@@ -45,7 +45,6 @@
   width: 11vw;
 }
 
-
 /*@byContent: Conteiner onde esta a apresentacao*/
 #dados1 {
   width: 45vw;
@@ -69,7 +68,7 @@
   align-items: center;
   justify-content: center;
   margin: 3px;
-  color: #EEEEEE;
+  color: #eeeeee;
   user-select: none;
 }
 
@@ -112,7 +111,7 @@
   padding: 3px;
 }
 
-#menu li{
+#menu li {
   list-style: none;
   border-radius: 12px;
   display: flex;
@@ -120,10 +119,10 @@
   align-items: center;
 }
 
-#menu li a{
+#menu li a {
   text-decoration: none;
   color: white;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
   font-size: clamp(10px, 15px, 20px);
   font-weight: 600;
   border-radius: 12px;
@@ -197,6 +196,91 @@ h1 {
   height: 3vh;
   margin-left: 0.5vw;
   animation: react 5s infinite linear;
+}
+
+#inforInicio {
+  overflow: hidden;
+}
+#inforInicio:nth-child(1) {
+  background-color: black;
+}
+
+#inforInicio:nth-child(2) {
+  background-color: black;
+}
+
+#listaInicio {
+  width: 100%;
+  height: 30vh;
+  background-color: #211f1f;
+  list-style: none;
+  display: grid;
+  grid-template-columns: 1fr;
+}
+
+#listaInicioItem {
+  height: calc((30vh / 5));
+  padding-left: 10px;
+  font-size: clamp(10px, 12px, 14px);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-family: monospace;
+
+  letter-spacing: 0;
+  font-style: normal;
+  font-weight: 550;
+
+  color: rgb(230, 237, 243);
+}
+
+#tituloInicioReactUser {
+  border-bottom: 1px solid rgba(2555, 255, 255, 0.6);
+  border-top: none;
+  padding: 10px;
+  height: 5vh;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 16px;
+}
+
+#tituloRecepcao {
+  width: 100%;
+  height: 5vh;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+
+#textoRecepcao {
+  width: 100%;
+  height: 30vh;
+  color: white;
+  text-align: justify;
+  font-family: "Poppins", sans-serif;
+  line-height: 5vh;
+  font-size: 15px;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #211f1f;
+}
+
+#btnApresentacao {
+  border: none;
+  width: 10vw;
+  height: 5vh;
+  border: 2px solid rgb(93, 149, 69);
+  background-color: #238636;
+  color: rgb(246, 244, 244);
+  border-radius: 4px;
+  font-family: "Poppins", sans-serif;
+  font-size: 15px;
 }
 
 @keyframes react {
