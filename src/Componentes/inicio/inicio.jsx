@@ -18,16 +18,16 @@ function Menu() {
         <a href="#menu">Inicio</a>
       </li>
       <li>
+        <a href="#sobrePainel">Sobre</a>
+      </li>
+      <li>
         <a href="#painelHabilidades">Habilidades</a>
       </li>
       <li>
-        <a href="#">Ferramentas</a>
+        <a href="#">Trajetoria</a>
       </li>
       <li>
-        <a href="#">Projectos</a>
-      </li>
-      <li>
-        <a href="#">Constactos</a>
+        <a href="#">Contacto</a>
       </li>
     </div>
   );
@@ -38,7 +38,7 @@ function InfoInicio() {
 }
 
 function InfoInicioReact2() {
-  const nome = "> emers0n17";
+  const nome = "/ emers0n17";
 
   const items = [
     "- 👋 Olá, eu sou @Emerson Covane...",

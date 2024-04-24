@@ -39,7 +39,7 @@ function DescricaoSobre() {
         <>
             <div id="descricaoSobre">
                 <div id="textoLocSobre">
-                    <h1 id="tituloTextoSobre">Quem sou eu?</h1>
+                    <h1 id="tituloTextoSobre">Biografia</h1>
                     <p id="textoSobre">
                         Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quidem,
                         temporibus fugiat magnam totam dicta quam minima. Eos repellendus est
@@ -48,6 +48,19 @@ function DescricaoSobre() {
                         earum atque doloremque placeat commodi itaque! Quam odio iste
                         perferendis quas ad architecto id!
                     </p>
+                    {/*Exemplo de biografia
+                    Olá! Meu nome é João Silva. Sou um desenvolvedor web apaixonado com
+            mais de 5 anos de experiência na indústria de tecnologia. Nasci e
+            cresci em São Paulo, Brasil, e me formei em Ciência da Computação
+            pela Universidade de São Paulo. Minha jornada profissional começou
+            como estagiário em uma startup local, onde rapidamente subi de
+            posição para se tornar um desenvolvedor full-stack. Desde então,
+            trabalhei em vários projetos desafiadores e inovadores, adquirindo
+            habilidades em diversas tecnologias e linguagens de programação.
+            Além do meu trabalho, gosto de contribuir para a comunidade de
+            código aberto e de escrever blogs técnicos para ajudar outros
+            desenvolvedores. No meu tempo livre, gosto de ler, viajar e passar
+            tempo com minha família e amigos.*/}
                 </div>
 
                 <div id="textoLocSobre">

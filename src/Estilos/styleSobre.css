@@ -68,19 +68,19 @@
 }
 
 #cardContactoImg:nth-child(1) {
-  width: 4vw;
+  width: 3vw;
 }
 
 #cardContactoImg:nth-child(2) {
-  width: 4.5vw;
+  width: 3vw;
 }
 
 #cardContactoImg:nth-child(3) {
-  width: 4vw;
+  width: 3vw;
 }
 
 #cardContactoImg:nth-child(4) {
-  width: 4.5vw;
+  width: 3vw;
 }
 
 #cardSobreText {
@@ -98,7 +98,7 @@
 }
 
 #cardSobreText:nth-child(1) {
-  color: rgb(49, 120, 198);
+  color: rgb(152, 205, 203);
 }
 
 #cardSobreContactos {
@@ -142,7 +142,7 @@
 
 
 #tituloTextoSobre {
-  color: rgb(49, 120, 198);
+  color: rgb(152, 205, 203);
   font-size: clamp(1rem, 1vw + 0.3rem, 1.5rem);
   font-family: "Poppins", sans-serif;
   width: 100%;
