@@ -99,7 +99,6 @@
 
 #cardSobreText:nth-child(1) {
   color: rgb(49, 120, 198);
-  font-weight: 800;
 }
 
 #cardSobreContactos {
@@ -178,6 +177,7 @@
 #cardSobreFoto {
   width: 20vh;
   height: 20vh;
-  background-color: rgb(33, 31, 31);
+  background-color: rgb(152, 205, 203);
+  background-image: url(../Imagens/foto-perfil.svg);
   border-radius: 50%;
 }
