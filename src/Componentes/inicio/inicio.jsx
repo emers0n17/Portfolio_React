@@ -11,6 +11,10 @@ import reactLogo from "../../Imagens/react.png";
 //A importar o css
 import "../../Estilos/estyleInicio.css";
 
+import { Swiper, SwiperSlide } from 'swiper/react'
+import { EffectFade } from "swiper/modules";
+
+
 function Menu() {
   return (
     <div id="menu">
@@ -35,6 +39,43 @@ function Menu() {
 
 function InfoInicio() {
   return <div id="inforInicio"></div>;
+}
+
+function InfoInicioReact3() {
+
+  const dados = [
+    { id: 1, image: facebook },
+    { id: 2, image: instagram },
+    { id: 3, image: github },
+    { id: 4, image: linkedin }
+  ]
+
+  return (
+    <div id="inforInicio">
+
+      {/*
+      
+      <Swiper
+        modules={{EffectFade}}
+        effect="fade"
+        slidesPerView={1}
+        navigation
+        pagination={{ clickable: true }}
+      >
+        {dados.map((item) => (
+          <SwiperSlide key={item.id}>
+            <img
+              src={item.image}
+              alt="Imagem do slide"
+              id="listaInicioItemSlide"
+            />
+          </SwiperSlide>
+        ))}
+      </Swiper>
+      */}
+
+    </div>
+  )
 }
 
 function InfoInicioReact2() {
@@ -68,7 +109,7 @@ function InfoInicioReact2() {
 function InfoInicioReact1() {
   const txtApresentacao = (
     <>
-      Olá, seja bem-vindo ao meu portfólio pessoal, aqui você pode ver a minha trajetória como desenvolvedor, as minhas habilidades e alguns dos meus projetos.<br/>
+      Olá, seja bem-vindo ao meu portfólio pessoal, aqui você pode ver a minha trajetória como desenvolvedor, as minhas habilidades e alguns dos meus projetos.<br />
       <button id="btnApresentacao">Comecar!</button>
     </>
   );
@@ -124,8 +165,8 @@ class Inicio extends React.Component {
   render() {
     return (
       <div id="inicio">
-        <Menu />
         <div id="containerInicio">
+        <Menu />
           <div id="perfil">
             {/*
             <Perfil />
@@ -133,8 +174,7 @@ class Inicio extends React.Component {
             */}
             <InfoInicioReact1 />
             <InfoInicioReact2 />
-            <InfoInicio />
-            <InfoInicio />
+            <InfoInicioReact3 />
           </div>
         </div>
       </div>

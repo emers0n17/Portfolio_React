@@ -84,6 +84,7 @@ function DescricaoSobre() {
 function Sobre() {
   return (
     <div id="sobreContainer">
+      
       <div id="sobrePainel">
         <Card />
         <DescricaoSobre />

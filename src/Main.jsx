@@ -4,10 +4,16 @@ import Habilidades from "./Componentes/habilidades/habilidades";
 import './Estilos/styleMain.css'
 import Sobre from "./Componentes/sobre/sobre";
 
+import { register } from 'swiper/element/bundle'
+import 'swiper/css';
+import 'swiper/css/navigation';
+import 'swiper/css/scrollbar';
+import 'swiper/css/pagination';
 
+register();
 
 //Componetes para os titulos
-function TituloSecao(props){
+export function TituloSecao(props){
   return <h1 id="tituloSecao">{props.desc}</h1>
 }
 

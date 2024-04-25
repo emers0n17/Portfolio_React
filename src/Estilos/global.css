@@ -8,8 +8,10 @@
   
   body {
     width: 100%;
-    height: auto;
+    height: 800vh;
     background-color: white;
+    display: flex;
+    flex-direction: column;
   }
 
   
