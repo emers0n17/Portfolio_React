@@ -181,3 +181,40 @@
   background-image: url(../Imagens/foto-perfil.svg);
   border-radius: 50%;
 }
+
+
+@media screen and (max-width: 700px) {
+  #sobreContainer {
+    height: auto;
+  }
+
+  #sobrePainel {
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  #cardSobre {
+    height: 70vh;
+    width: 80vw;
+  }
+
+  #descricaoSobre {
+    height: 40vh;
+    width: 80vw;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  #cardSobre {
+    height: 70vh;
+    width: 90vw;
+  }
+
+  #descricaoSobre {
+    height: 40vh;
+    width: 90vw;
+  }
+}

@@ -52,7 +52,6 @@
   grid-template-columns: repeat(5, 1fr);
 }
 
-
 /*Div que contem as informacoes das linguagens*/
 #linguagenHabilidades {
   border-radius: 12px;
@@ -69,7 +68,6 @@
   box-shadow: 0 0 2px rgb(193, 191, 191);
   transition: 0.4s;
 }
-
 
 /*Div que ira contenter a imagem da linguagem*/
 #imagenLinguagemhabilidades {
@@ -120,7 +118,6 @@
   font-weight: 700;
 }
 
-
 /*Div onde estao os botoes que irao mostrar as habilidades*/
 #btnGroupHabilidades {
   width: 81%;
@@ -138,12 +135,9 @@
   border: none;
   background-color: rgb(33, 31, 31);
   color: white;
-  font-size: clamp(0.3em, 0.5em + 0.5vw,1em);
+  font-size: clamp(0.3em, 0.5em + 0.5vw, 1em);
   transition: 0.3s;
 }
-
-
-
 
 #btnHabilidades:nth-child(1) {
   width: 15vw;
@@ -157,3 +151,86 @@
   border-top-right-radius: 12px;
 }
 
+@media screen and (max-width: 1200px){
+  #linguagenHabilidades {
+    height: 30vh;
+  }
+
+  #painelHabilidades {
+    width: 95% !important;
+  }
+
+  #btnGroupHabilidades {
+    width: 95%;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  #containerHabilidades {
+    height: 130vh;
+  }
+
+  #painelHabilidades {
+    height: 100vh;
+    padding: 0;
+  }
+
+  #linguagenHabilidades {
+    height: 30vh;
+  }
+
+  #framworksHabilidades,
+  #ferramentasHabilidades,
+  #linguagensHabilidades {
+    height: 90vh;
+    display: grid !important;
+    grid-template-columns: repeat(3, 1fr) !important;
+    grid-template-rows: repeat(2, 35vh) !important;
+  }
+
+  #tituloHabilidades {
+    height: 10vh;
+  }
+}
+
+
+@media screen and (max-width: 480px) {
+  #linguagenHabilidades {
+    height: 35vh;
+  }
+
+  #containerHabilidades {
+    height: 160vh;
+  }
+
+  #tituloHabilidades {
+    height: 10vh;
+  }
+
+  #painelHabilidades {
+    width: 95% !important;
+    border-top-right-radius: 0;
+    height: 160vh;
+  }
+
+  #btnGroupHabilidades {
+    width: 95%;
+  }
+
+  #btnHabilidades,
+  #btnHabilidades:nth-child(1),
+  #btnHabilidades:nth-child(3) {
+    width: calc((95vw / 3));
+    font-size: 12px;
+  }
+
+  #framworksHabilidades,
+  #ferramentasHabilidades,
+  #linguagensHabilidades {
+    height: 160vh;
+    display: grid !important;
+    grid-template-columns: repeat(2, 1fr) !important;
+    grid-template-rows: repeat(3, 35vh) !important;
+    grid-row-gap: 5vh;
+  }
+}

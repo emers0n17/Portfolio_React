@@ -17,14 +17,21 @@ export function TituloSecao(props){
   return <h1 id="tituloSecao">{props.desc}</h1>
 }
 
-
+//Componente para poder dar espaco
+function Espaco(props){
+  const estilo = {
+    height: `${props.height + "vh"}`
+  }
+  return <div style={estilo} id="esacoEntreSeccoes"></div>
+}
 
 class Main extends React.Component {
   render() {
     return (
       <>
         <Inicio />
-        <TituloSecao desc="Sobre min"/>
+        <Espaco height="5" color="blue" />
+        <TituloSecao   desc="Sobre min"/>
         <Sobre />
         <TituloSecao desc="Minhas habilidades"/>
         <Habilidades />
