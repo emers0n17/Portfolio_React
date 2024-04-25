@@ -313,47 +313,73 @@ h1 {
 }
 
 @media screen and (min-width: 700px) {
+
+  #containerInicio {
+    height: 100vh;
+  }
+
   #tituloRecepcao,
   #tituloInicioReactUser {
     height: 7vh;
-    font-size: 24px;
+    font-size: 16px;
   }
 
   #listaInicio {
     height: 100%;
     background-color: black;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, 5vh);
+  }
+
+  #listaInicio li{
+    font-size: 12px !important;
   }
 
   #textoRecepcao{
     height: 80%;
-    font-size: 20px;
+    font-size: 12px;
   }
 
   #menu {
     font-size: clamp(14px, 16px, 18px);
   }
 
+  #btnApresentacao {
+    height: 4vh;
+  }
+
 }
 
 @media screen and (max-width: 700px) {
 
+  #containerInicio {
+    height: 150vh !important;
+    position: relative;
+  }
+
+
   #listaInicio {
-    display: grid;
-    grid-template-columns: repeat(1fr);
-    grid-template-rows: repeat(5, 1fr);
+    display: flex;
+    flex-direction: column;
+    height: 5vh;
+    background-color: red;
+  }
+
+  #textoRecepcao {
+    height: 90%;
+  }
+
+  #listaInicio {
+    background-color: black;
   }
   
-  #textoRecepcao,
-  #listaInicio {
-    height: 32vh;
-  }
-
+ 
   #menu {
     width: 95%;
-  }
-
-  #menu li a {
-
+    margin-bottom: 5vh;
+    position: relative;
+    top: 10px;
   }
 
   #btnApresentacao {
