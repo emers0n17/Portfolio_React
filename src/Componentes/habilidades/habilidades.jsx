@@ -16,6 +16,8 @@ import imagemBlender from "../../Imagens/blender-svgrepo-com.svg";
 import imagemUnrealEngine from "../../Imagens/unreal-engine-svgrepo-com.svg";
 import imagemVsCode from "../../Imagens/vs-code-svgrepo-com.svg";
 
+
+
 class Linguagem extends React.Component {
   render() {
     const estilo = {
@@ -112,6 +114,8 @@ function FerramentasHabilidade() {
     </>
   );
 }
+
+
 
 const Habilidades = () => {
   const [componenteAtivo, setComponenteAtivo] = useState('LinguagemsHabilidade');

@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
+import { TypeAnimation } from "react-type-animation";
 
 //A importar as imanges
 import facebook from "../../Imagens/facebook-color-svgrepo-com.svg";
@@ -11,9 +12,8 @@ import reactLogo from "../../Imagens/react.png";
 //A importar o css
 import "../../Estilos/estyleInicio.css";
 
-import { Swiper, SwiperSlide } from 'swiper/react'
+import { Swiper, SwiperSlide } from "swiper/react";
 import { EffectFade } from "swiper/modules";
-
 
 function Menu() {
   return (
@@ -42,17 +42,15 @@ function InfoInicio() {
 }
 
 function InfoInicioReact3() {
-
   const dados = [
     { id: 1, image: facebook },
     { id: 2, image: instagram },
     { id: 3, image: github },
-    { id: 4, image: linkedin }
-  ]
+    { id: 4, image: linkedin },
+  ];
 
   return (
     <div id="inforInicio">
-
       {/*
       
       <Swiper
@@ -73,9 +71,8 @@ function InfoInicioReact3() {
         ))}
       </Swiper>
       */}
-
     </div>
-  )
+  );
 }
 
 function InfoInicioReact2() {
@@ -85,31 +82,33 @@ function InfoInicioReact2() {
     "- 👋 Olá, eu sou @Emerson Covane...",
     "- 😄 Visite meu perfil: ...",
     "- ⚡ Desenvolvedor web: ...",
-    "- 🌱 Estrou sempre a aprender...",
-    "- 👀 De um feedback..."
-  ]
+    "- 🌱 Estou...",
+    "- 👀 De um feedback...",
+  ];
 
   return (
     <div id="inforInicio">
       <h1 id="tituloInicioReact">
         <h1 id="tituloInicioReactUser">{nome}</h1>
         <ol type="1" id="listaInicio">
-          <p id="listaInicioItem">{items[0]}</p>
-          <p id="listaInicioItem">{items[1]}</p>
-          <p id="listaInicioItem">{items[2]}</p>
-          <p id="listaInicioItem">{items[3]}</p>
-          <p id="listaInicioItem">{items[4]}</p>
+          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou @Emerson Covane...", 3000,"I, I'm @Emerson Covane...", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil: ...", 3000, "Visite my personal perfil @Emerson Covane...", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web: ...", 3000, "Web developer: ...", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento...", 3000, "In search of knowledge", 100]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "De um feedback...", 3000, "Give feedback.", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
         </ol>
       </h1>
     </div>
   );
 }
 
-
 function InfoInicioReact1() {
   const txtApresentacao = (
     <>
-      Olá, seja bem-vindo ao meu portfólio pessoal, aqui você pode ver a minha trajetória como desenvolvedor, as minhas habilidades e alguns dos meus projetos.<br />
+      Olá, seja bem-vindo ao meu portfólio pessoal, aqui você pode ver a minha
+      trajetória como desenvolvedor, as minhas habilidades e alguns dos meus
+      projetos.
+      <br />
       <button id="btnApresentacao">Comecar!</button>
     </>
   );
@@ -120,7 +119,6 @@ function InfoInicioReact1() {
     </div>
   );
 }
-
 
 function Perfil() {
   return (
@@ -166,7 +164,7 @@ class Inicio extends React.Component {
     return (
       <div id="inicio">
         <div id="containerInicio">
-        <Menu />
+          <Menu />
           <div id="perfil">
             {/*
             <Perfil />
