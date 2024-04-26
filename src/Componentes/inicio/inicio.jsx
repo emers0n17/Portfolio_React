@@ -91,11 +91,11 @@ function InfoInicioReact2() {
       <h1 id="tituloInicioReact">
         <h1 id="tituloInicioReactUser">{nome}</h1>
         <ol type="1" id="listaInicio">
-          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou @Emerson Covane...", 3000,"I, I'm @Emerson Covane...", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil: ...", 3000, "Visite my personal perfil @Emerson Covane...", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web: ...", 3000, "Web developer: ...", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento...", 3000, "In search of knowledge", 100]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "De um feedback...", 3000, "Give feedback.", 3000]}speed={50} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou Emerson Covane...", 3000,"I, I'm @Emerson Covane...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil ...", 3000, "Visit my profile...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web ...", 3000, "Web developer ...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento...", 3000, "In search of knowledge...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "Dê um feedback...", 3000, "Give feedback...", 2000]}speed={30} repeat={Infinity} id="listaInicioItem"/></p>
         </ol>
       </h1>
     </div>
