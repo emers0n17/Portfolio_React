@@ -14,7 +14,7 @@ import imagemGit from "../../Imagens/git-svgrepo-com.svg";
 import imagemFigma from "../../Imagens/figma-svgrepo-com.svg";
 import imagemBlender from "../../Imagens/blender-svgrepo-com.svg";
 import imagemUnrealEngine from "../../Imagens/unreal-engine-svgrepo-com.svg";
-import imagemVsCode from "../../Imagens/vs-code-svgrepo-com.svg";
+// import imagemVsCode from "../../Imagens/vs-code-svgrepo-com.svg";
 
 
 

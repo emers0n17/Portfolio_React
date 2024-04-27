@@ -1,20 +1,20 @@
 import "../../Estilos/styleSobre.css";
-import instagramImg from "../../Imagens/instagram-white.svg";
-import facebookImg from "../../Imagens/facebook-white.svg";
-import linkedinImg from "../../Imagens/Linkedin_whtite.svg";
-import gitHubImg from "../../Imagens/github-white.svg";
+// import instagramImg from "../../Imagens/instagram-white.svg";
+// import facebookImg from "../../Imagens/facebook-white.svg";
+// import linkedinImg from "../../Imagens/Linkedin_whtite.svg";
+// import gitHubImg from "../../Imagens/github-white.svg";
 
 
-function Contacto(props) {
-  return (
-    <div id="cardSobreContactos">
-      <img id="cardContactoImg" src={props.gitHub} alt="" />
-      <img id="cardContactoImg" src={props.instagram} alt="" />
-      <img id="cardContactoImg" src={props.facebook} alt="" />
-      <img id="cardContactoImg" src={props.linkedin} alt="" />
-    </div>
-  );
-}
+// function Contacto(props) {
+//   return (
+//     <div id="cardSobreContactos">
+//       <img id="cardContactoImg" src={props.gitHub} alt="" />
+//       <img id="cardContactoImg" src={props.instagram} alt="" />
+//       <img id="cardContactoImg" src={props.facebook} alt="" />
+//       <img id="cardContactoImg" src={props.linkedin} alt="" />
+//     </div>
+//   );
+// }
 
 function Card() {
   return (

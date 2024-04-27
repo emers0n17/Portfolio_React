@@ -12,8 +12,8 @@ import reactLogo from "../../Imagens/react.png";
 //A importar o css
 import "../../Estilos/estyleInicio.css";
 
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectFade } from "swiper/modules";
+// import { Swiper, SwiperSlide } from "swiper/react";
+// import { EffectFade } from "swiper/modules";
 
 function Menu() {
   return (
@@ -28,32 +28,28 @@ function Menu() {
         <a href="#painelHabilidades">Habilidades</a>
       </li>
       <li>
-        <a href="#">Trajetoria</a>
+        <a href="#menu">Trajetoria</a>
       </li>
       <li>
-        <a href="#">Contacto</a>
+        <a href="#menu">Contacto</a>
       </li>
     </div>
   );
 }
 
-function InfoInicio() {
-  return <div id="inforInicio"></div>;
-}
+
 
 function InfoInicioReact3() {
-  const dados = [
-    { id: 1, image: facebook },
-    { id: 2, image: instagram },
-    { id: 3, image: github },
-    { id: 4, image: linkedin },
-  ];
+  // const dados = [
+  //   { id: 1, image: facebook },
+  //   { id: 2, image: instagram },
+  //   { id: 3, image: github },
+  //   { id: 4, image: linkedin },
+  // ];
 
   return (
     <div id="inforInicio">
-      {/*
-      
-      <Swiper
+      {/* <Swiper
         modules={{EffectFade}}
         effect="fade"
         slidesPerView={1}
@@ -69,8 +65,7 @@ function InfoInicioReact3() {
             />
           </SwiperSlide>
         ))}
-      </Swiper>
-      */}
+      </Swiper> */}
     </div>
   );
 }
@@ -78,24 +73,31 @@ function InfoInicioReact3() {
 function InfoInicioReact2() {
   const nome = "/ emers0n17";
 
-  const items = [
-    "- 👋 Olá, eu sou @Emerson Covane...",
-    "- 😄 Visite meu perfil: ...",
-    "- ⚡ Desenvolvedor web: ...",
-    "- 🌱 Estou...",
-    "- 👀 De um feedback...",
-  ];
+
+    // "- 👋 Olá, eu sou @Emerson Covane...",
+    // "- 😄 Visite meu perfil: ...",
+    // "- ⚡ Desenvolvedor web: ...",
+    // "- 🌱 Estou...",
+    // "- 👀 De um feedback...",
+
+  const [text, setText] = useState('');
+
+  const changeText = (prevState) => {
+    setText(prevState)
+    alert(prevState)
+  }
+  
 
   return (
     <div id="inforInicio">
       <h1 id="tituloInicioReact">
         <h1 id="tituloInicioReactUser">{nome}</h1>
         <ol type="1" id="listaInicio">
-          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou Emerson Covane...", 3000,"I, I'm @Emerson Covane...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil ...", 3000, "Visit my profile...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web ...", 3000, "Web developer ...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento...", 3000, "In search of knowledge...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/></p>
-          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "Dê um feedback...", 3000, "Give feedback...", 2000]}speed={30} repeat={Infinity} id="listaInicioItem"/></p>
+          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou Emerson Covane...", 3000,"I, I'm @Emerson Covane...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
+          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil ...", 3000, "Visit my profile...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
+          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web ...", 3000, "Web developer ...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
+          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento...", 3000, "In search of knowledge...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
+          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "Dê um feedback...", 3000, "Give feedback...", 2000]}speed={30} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
         </ol>
       </h1>
     </div>
@@ -120,44 +122,8 @@ function InfoInicioReact1() {
   );
 }
 
-function Perfil() {
-  return (
-    <div id="imagen">
-      <div id="powered">
-        <p>Powered by</p>
-        <img src={reactLogo} alt="" />
-      </div>
-      <img id="minhaImagen" src={correto} alt="Minha imagen" />
-      <h1>@Emerson_Covane</h1>
-      <div id="contactos">
-        <img id="contactosImg" src={facebook} alt="" />
-        <img id="contactosImg" src={instagram} alt="" />
-        <img id="contactosImg" src={github} alt="" />
-        <img id="contactosImg" src={linkedin} alt="" />
-      </div>
-    </div>
-  );
-}
 
-function Dados() {
-  return (
-    <div id="dados1">
-      <h1 id="apresentacaoTxt">Bem vindo!</h1>
-      <p id="sobreTxt">
-        Olá!
-        <br />
-        Sou <span id="spamAzul">Emerson Domingos Covane</span>, atualmente estou
-        cursando Engenharia Informática no Instituto Superior Politecnico de
-        Tete em Tete/Mocambique, e este e o meu{" "}
-        <span id="spamVermelho">Portfolio</span>.<br />
-        Já criei alguns aplicativos para desktop, porém, meu principal foco está
-        no desenvolvimento <span id="spamVermelho">Web</span>. Veja aqui as
-        minhas <span id="spamAzul">habilidades</span> como programador e alguns{" "}
-        <span id="spamAzul">projectos</span> por min desenvolvidos.
-      </p>
-    </div>
-  );
-}
+
 
 class Inicio extends React.Component {
   render() {
@@ -166,10 +132,6 @@ class Inicio extends React.Component {
         <div id="containerInicio">
           <Menu />
           <div id="perfil">
-            {/*
-            <Perfil />
-            <Dados />
-            */}
             <InfoInicioReact1 />
             <InfoInicioReact2 />
             <InfoInicioReact3 />
