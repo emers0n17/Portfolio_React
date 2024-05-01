@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { TypeAnimation } from "react-type-animation";
 
+
 //A importar as imanges
 import facebook from "../../Imagens/facebook-color-svgrepo-com.svg";
 import instagram from "../../Imagens/instagram-1-svgrepo-com.svg";
@@ -11,9 +12,12 @@ import reactLogo from "../../Imagens/react.png";
 
 //A importar o css
 import "../../Estilos/estyleInicio.css";
+// import Swiper from "swiper";
+// import { SwiperSlide } from "swiper/react";
 
-// import { Swiper, SwiperSlide } from "swiper/react";
+    import { Swiper, SwiperSlide } from "swiper/react";
 // import { EffectFade } from "swiper/modules";
+
 
 function Menu() {
   return (
@@ -38,35 +42,33 @@ function Menu() {
 }
 
 
+function Slide(){
+  return (
+    <div id="slideContainer">
+    
+    </div>
+  )
+}
+
 
 function InfoInicioReact3() {
-  // const dados = [
-  //   { id: 1, image: facebook },
-  //   { id: 2, image: instagram },
-  //   { id: 3, image: github },
-  //   { id: 4, image: linkedin },
-  // ];
+  const dados = [
+    { id: 1, image: facebook },
+    { id: 2, image: instagram },
+    { id: 3, image: github },
+    { id: 4, image: linkedin },
+  ];
 
   return (
-    <div id="inforInicio">
-      {/* <Swiper
-        modules={{EffectFade}}
-        effect="fade"
+    <div id="inforInicio" className="inforInicio">
+      <Swiper 
         slidesPerView={1}
-        navigation
-        pagination={{ clickable: true }}
       >
-        {dados.map((item) => (
-          <SwiperSlide key={item.id}>
-            <img
-              src={item.image}
-              alt="Imagem do slide"
-              id="listaInicioItemSlide"
-            />
-          </SwiperSlide>
-        ))}
-      </Swiper> */}
-    </div>
+        <SwiperSlide >
+          <Slide />
+        </SwiperSlide>
+      </Swiper>
+    </div>  
   );
 }
 
@@ -103,6 +105,7 @@ function InfoInicioReact2() {
     </div>
   );
 }
+
 
 function InfoInicioReact1() {
   const txtApresentacao = (
