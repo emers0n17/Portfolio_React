@@ -135,7 +135,7 @@ class Inicio extends React.Component {
         <div id="containerInicio">
           <Menu />
           <div id="perfil">
-            <InfoInicioReact1 />
+            <InfoInicioReact1/>
             <InfoInicioReact2 />
             <InfoInicioReact3 />
           </div>
