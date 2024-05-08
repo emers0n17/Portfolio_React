@@ -2,6 +2,7 @@ import "../../Estilos/styleProjectos.css";
 import Projecto from "./projecto";
 import background from "../../Imagens/background2.png";
 import { EffectCards } from "swiper/modules";
+import deslizar from '../../Imagens/deslize.png'
 
 //Swiper slide
 import { register } from "swiper/element/bundle";
@@ -46,6 +47,9 @@ function Projectos() {
   return (
     <div className="conatinerProjectos">
       <div className="conteudoProjectos">
+        <h1 id="textoProjectos">
+        <img id="textoProjectoImagen" src={deslizar} alt="" />  Deslize para vizualizar os projectos
+        </h1>
         <div className="swiperProjecto">
           <Swiper
             className="swiperDoProjecto"

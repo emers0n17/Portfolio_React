@@ -12,8 +12,6 @@ import reactLogo from "../../Imagens/react.png";
 
 //A importar o css
 import "../../Estilos/estyleInicio.css";
-// import Swiper from "swiper";
-// import { SwiperSlide } from "swiper/react";
 
 
 function Menu() {
