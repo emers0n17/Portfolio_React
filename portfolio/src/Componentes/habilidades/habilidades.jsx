@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import "../../Estilos/styleHabilidades.css"; // Importe o arquivo CSS
 import imagemHTML from "../../Imagens/html-5-svgrepo-com.svg";

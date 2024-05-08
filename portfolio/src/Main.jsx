@@ -3,24 +3,27 @@ import Inicio from "./Componentes/inicio/inicio";
 import Habilidades from "./Componentes/habilidades/habilidades";
 import './Estilos/styleMain.css'
 import Sobre from "./Componentes/sobre/sobre";
+import Projectos from "./Componentes/projectos/projectos";
 
-import { register } from 'swiper/element/bundle'
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/scrollbar';
-import 'swiper/css/pagination';
+// import { register } from 'swiper/element/bundle'
+// import 'swiper/css';
+// import 'swiper/css/navigation';
+// import 'swiper/css/scrollbar';
+// import 'swiper/css/pagination';
 
-register();
+// register();
 
 //Componetes para os titulos
 export function TituloSecao(props){
+  // eslint-disable-next-line react/prop-types
   return <h1 id="tituloSecao">{props.desc}</h1>
 }
 
 //Componente para poder dar espaco
 function Espaco(props){
   const estilo = {
-    height: `${props.height + "vh"}`
+    // eslint-disable-next-line react/prop-types
+    height: `${props.height}vh`
   }
   return <div style={estilo} id="esacoEntreSeccoes"></div>
 }
@@ -35,6 +38,8 @@ class Main extends React.Component {
         <Sobre />
         <TituloSecao desc="Minhas habilidades"/>
         <Habilidades />
+        <TituloSecao desc="Meus projectos"/>
+        <Projectos />
       </>
     );
   }

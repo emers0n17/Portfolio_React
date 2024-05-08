@@ -32,7 +32,7 @@ function Menu() {
         <a href="#painelHabilidades">Habilidades</a>
       </li>
       <li>
-        <a href="#menu">Trajetoria</a>
+        <a href="#menu">Projectos</a>
       </li>
       <li>
         <a href="#menu">Contacto</a>

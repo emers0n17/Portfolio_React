@@ -1,0 +1,78 @@
+/* Estilos para o componete Projecto */
+
+.conteudoProjectos {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: rgb(27, 26, 26);
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 0 2px rgb(93, 91, 91);
+    width: 80%;
+    height: calc(50vh + 20vh);
+}
+
+.containerProjecto {
+  width: 100%;
+  height: 50vh;
+  background-color: rgb(33, 31, 31);
+  box-shadow: 0 0 2px rgb(193, 191, 191);
+  border-radius: 10px;
+  overflow: hidden;
+
+  user-select: none;
+
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.imagem_do_site_projecto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.descricao_do_projecto_projecto {
+    display: grid;
+    grid-template-rows: repeat(3, 50% 25% 25%);
+}
+
+.descricaoProjecto {
+    padding: 20px;
+    text-align: justify;
+    color: rgb(255, 255, 255);
+    line-height: 140%;
+    font-family: 'Poppins', sans-serif;
+    font-size: clamp(12px, 14px, 16px);
+    background-color: red;
+}
+
+.imagen_tecnologia_usada_projecto {
+    background-color: green;
+}
+
+.redirecionamentoProjecto {
+    background-color: blue;
+}
+
+.imagem_do_projecto {
+    background-color: white;
+    background-repeat: no-repeat;
+    background-size: 100%;
+    width: 90%;
+    height: 90%;
+    border-radius: 10px;
+}
+
+.swiper {
+    width: 80%;
+}
+/* Estilos para o componente principal Projectos */
+.conatinerProjectos {
+  width: 100%;
+  height: auto;
+
+  display: flex;
+  justify-content: center;
+}
