@@ -15,9 +15,6 @@ import "../../Estilos/estyleInicio.css";
 // import Swiper from "swiper";
 // import { SwiperSlide } from "swiper/react";
 
-    import { Swiper, SwiperSlide } from "swiper/react";
-// import { EffectFade } from "swiper/modules";
-
 
 function Menu() {
   return (
@@ -61,13 +58,6 @@ function InfoInicioReact3() {
 
   return (
     <div id="inforInicio" className="inforInicio">
-      <Swiper 
-        slidesPerView={1}
-      >
-        <SwiperSlide >
-          <Slide />
-        </SwiperSlide>
-      </Swiper>
     </div>  
   );
 }
