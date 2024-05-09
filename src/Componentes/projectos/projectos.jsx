@@ -49,7 +49,7 @@ function Projectos() {
   ];
 
   return (
-    <div className="conatinerProjectos">
+    <div id="conatinerProjectos" className="conatinerProjectos">
       <div className="conteudoProjectos">
         <h1 id="textoProjectos">
         <img id="textoProjectoImagen" src={deslizar} alt="" />  Deslize para vizualizar os projectos

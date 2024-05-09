@@ -1,4 +1,4 @@
-#inicio {
+ #inicio {
   width: 100%;
   height: auto;
   background-size: 100%;
@@ -439,6 +439,10 @@ h1 {
     height: 90vh;
     width: 95%;
   }
+  #mudarItem {
+    width: 8vw;
+    height: 2vh;
+  }
 }
 
 @media screen and (max-width: 480px) {
@@ -454,7 +458,11 @@ h1 {
 
   #containerInicio {
     height: auto !important;
+  }
 
+  #mudarItem {
+    width: 10vw !important;
+    font-size: clamp(8px, 10px, 12px);
   }
   
   #perfil {
