@@ -1,8 +1,12 @@
 import "../../Estilos/styleProjectos.css";
 import Projecto from "./projecto";
-import background from "../../Imagens/background2.png";
 import { EffectCards } from "swiper/modules";
+//Imagens
 import deslizar from '../../Imagens/deslize.png'
+import background from "../../Imagens/background2.png";
+import infomarket from "../../Imagens/infomarket.jpg"
+import java from '../../Imagens/java-svgrepo-com.svg'
+import mysql from '../../Imagens/mysql-svgrepo-com.svg'
 
 //Swiper slide
 import { register } from "swiper/element/bundle";
@@ -20,7 +24,7 @@ function Projectos() {
     {
       id: "1",
       descricao:
-        "Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quidem illum laboriosam numquam rerum, obcaecati voluptatem aliquid facere, ad officiis maxime officia delectus alias enim sapiente doloribus repellendus. Recusandae quia explicabo dolor, corporis cumque nostrum quidem vero. Sit deleniti doloremque commodi rem, numquam reiciendis .",
+        "A InfoMarket e um aplicativo desktop feito em java, e uma loja de aparelhos informaticos online onde o usuario pode alem de apreciar os produtos, adiciona-los a um carrinho e efectuar o pagamento.",
     },
     {
       id: "2",
@@ -56,7 +60,7 @@ function Projectos() {
             effect={"cards"}
             modules={[EffectCards]}
           >
-            <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
+            <SwiperSlide><Projecto descricao={slides[0].descricao} titulo={"Loja online"} tecnologia2={java} tecnologia3={mysql} alt2={"Java"} alt3={"mySQL"} imagen={infomarket} /></SwiperSlide>
             <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
             <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
             <SwiperSlide><Projecto imagen={background} /></SwiperSlide>

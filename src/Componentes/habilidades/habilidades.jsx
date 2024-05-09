@@ -34,7 +34,9 @@ class Linguagem extends React.Component {
           alt={this.props.linguagem}
         />
         <h1 id="nomeLinguagemHabilidades">{this.props.linguagem}</h1>
-        <h1 id="descricaoLinguagemHabilidades">Ver mais...</h1>
+        {/* <h1 id="descricaoLinguagemHabilidades">
+          <div id="barraDeProgre">100%</div>
+        </h1> */}
       </div>
     );
   }
