@@ -50,7 +50,7 @@
 .descricao_do_projecto_projecto {
   display: grid;
   grid-template-rows: repeat(3, 20% 30% 20% 20%);
-  row-gap: 10px;
+  row-gap: 5px;
 }
 
 .descricaoProjecto {
@@ -87,9 +87,6 @@
   padding: 5px;
 }
 
-.redirecionamentoProjecto {
-
-}
 
 .imagem_do_projecto {
     background-color: white;
@@ -135,7 +132,6 @@
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  margin-bottom: 10px;
 }
 
 .redirecionamentoProjecto a {
