@@ -1,6 +1,8 @@
 /* eslint-disable react/prop-types */
 import '../../Estilos/styleProjectos.css'
-import imagen from '../../Imagens/electron-svgrepo-com.svg'
+import github from '../../Imagens/github-white.svg'
+import redirect from '../../Imagens/icons8-share-48.png'
+
 
 
 function Projecto(props) {
@@ -23,7 +25,8 @@ function Projecto(props) {
                        <img className='image_tecnologia ' src={props.tecnologia4} alt={props.alt4} /> 
                 </div>
                 <div className="redirecionamentoProjecto">
-
+                        <a href="#" target='_blank'><img className="imagen_codigo_redirect" src={github} alt="" />  Codigo</a>
+                        <a href="#" target='_blank'>Demo <img className='imagen_codigo_redirect' src={redirect} alt="" /></a>
                 </div>
             </div>
         </div>

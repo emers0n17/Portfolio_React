@@ -49,7 +49,8 @@
 
 .descricao_do_projecto_projecto {
   display: grid;
-  grid-template-rows: repeat(3, 20% 40% 20% 20%);
+  grid-template-rows: repeat(3, 20% 30% 20% 20%);
+  row-gap: 10px;
 }
 
 .descricaoProjecto {
@@ -58,7 +59,7 @@
     color: white;
     line-height: 140%;
     font-family: 'Poppins', sans-serif;
-    font-size: clamp(12px, 13px, 14px);
+    font-size: 14px;
     font-weight: 400;
 }
 
@@ -87,6 +88,7 @@
 }
 
 .redirecionamentoProjecto {
+
 }
 
 .imagem_do_projecto {
@@ -123,6 +125,49 @@
 
   display: flex;
   justify-content: center;
+}
+
+.redirecionamentoProjecto {
+  width: 50%;
+  margin-left: 25%;
+  background-color: white;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.redirecionamentoProjecto a {
+  width: 4vw;
+  height: 5vh;
+  text-decoration: none;
+  color: color(srgb red green blue);
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.redirecionamentoProjecto a:nth-child(1) {
+  width: 5vw;
+}
+
+.imagen_codigo_redirect {
+  width: 24px;
+}
+
+.imagen_tecnologia_usada_projecto {
+
+}
+
+
+@media  screen and (min-width: 1201px) {
+
+  .image_tecnologia  {
+    width: 4vw;
+  }
 }
 
 @media  screen and (max-width: 1200px) {
