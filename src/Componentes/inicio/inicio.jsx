@@ -37,12 +37,12 @@ function Menu() {
 }
 
 
-function Slide(){
+function Slide() {
   return (
     <div id="slideContainer">
-    
+      {/* Your 3D model goes here */}
     </div>
-  )
+  );
 }
 
 
@@ -56,13 +56,11 @@ function InfoInicioReact3() {
 
   return (
     <div id="inforInicio" className="inforInicio">
+      <script type="module" src="https://unpkg.com/@splinetool/viewer@1.3.1/build/spline-viewer.js"></script>
+<spline-viewer url="https://prod.spline.design/QV4JmesCEuBJqvSi/scene.splinecode"></spline-viewer>
     </div>  
   );
 }
-
-function InfoInicioReact2() {
-  const nome = "/ emers0n17";
-
 
     // "- 👋 Olá, eu sou @Emerson Covane...",
     // "- 😄 Visite meu perfil: ...",
@@ -70,24 +68,21 @@ function InfoInicioReact2() {
     // "- 🌱 Estou...",
     // "- 👀 De um feedback...",
 
-  const [text, setText] = useState('');
+    
 
-  const changeText = (prevState) => {
-    setText(prevState)
-    alert(prevState)
-  }
-  
+function InfoInicioReact2() {
+  const nome = "/ emers0n17";
 
   return (
     <div id="inforInicio">
       <h1 id="tituloInicioReact">
         <h1 id="tituloInicioReactUser">{nome}</h1>
         <ol type="1" id="listaInicio">
-          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou Emerson Covane...", 3000,"I, I'm @Emerson Covane...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
-          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil ...", 3000, "Visit my profile...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
-          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web ...", 3000, "Web developer ...", 2000]}speed={40} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
-          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento...", 3000, "In search of knowledge...", 2000]}speed={60} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
-          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "Dê um feedback...", 3000, "Give feedback...", 2000]}speed={30} repeat={Infinity} id="listaInicioItem"/> <button onClick={() => changeText("Brevemente")} id="mudarItem">Change</button></p>
+          <p  id="listaInicioItem">- 👋 <TypeAnimation sequence={[ "Olá, eu sou Emerson Covane...", 3000]}speed={60} repeat={Infinity} id="listaInicioItem"/> </p>
+          <p  id="listaInicioItem">- 😄 <TypeAnimation sequence={[ "Visite meu perfil ...", 3000]}speed={40} repeat={Infinity} id="listaInicioItem"/> </p>
+          <p  id="listaInicioItem">- ⚡ <TypeAnimation sequence={[ "Desenvolvedor web ...", 3000]}speed={40} repeat={Infinity} id="listaInicioItem"/> </p>
+          <p  id="listaInicioItem">- 🌱 <TypeAnimation sequence={[ "Em busca do conhecimento..."]}speed={60} repeat={Infinity} id="listaInicioItem"/> </p>
+          <p  id="listaInicioItem">- 👀 <TypeAnimation sequence={[ "Dê um feedback...", 3000]}speed={30} repeat={Infinity} id="listaInicioItem"/> </p>
         </ol>
       </h1>
     </div>
