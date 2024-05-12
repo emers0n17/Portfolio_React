@@ -5,9 +5,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: rgb(33, 31, 31);
-  border-bottom: 2px solid #E90064;
-  border-top: 2px solid #E90064;
 }
 
 /*Conainer onde ira fiacar o conteudo*/

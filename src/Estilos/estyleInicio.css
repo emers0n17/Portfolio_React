@@ -1,480 +1,262 @@
  #inicio {
+   width: 100%;
+   height: auto;
+   background-size: 100%;
+   background-repeat: no-repeat;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: space-around;
+ }
+
+ /*@byCovane: containerInicio principal*/
+ #containerInicio {
+   width: 100%;
+   height: 80vh;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-around;
+   align-items: center;
+ }
+
+ #perfil {
+   width: 80vw;
+   height: 80vh;
+   background-color: white;
+   box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
+   border-radius: 10px;
+   padding: 13px;
+   display: grid;
+   grid-template-columns: repeat(2, 1fr);
+   grid-template-rows: repeat(2, 1fr);
+   background-color: rgb(22, 22, 22);
+   box-shadow: 0 0 5px rgb(93, 91, 91);
+   row-gap: 20px;
+   column-gap: 20px;
+ }
+
+ /* Componente onde ficam as informacoes no inicio */
+ .inforInicio {
+   background-color: rgb(22, 22, 22);
+   box-shadow: 0 0 2px rgb(193, 191, 191);
+   border-radius: 10px;
+   display: flex;
+   flex-direction: column;
+   overflow: hidden;
+ }
+ /* titulo do Componente onde ficam as informacoes no inicio */
+ .tituto_inforInicio {
+   width: 100%;
+   height: 10vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-bottom: 1px solid rgba(193, 191, 191, 0.2);
+ }
+
+ .tituto_inforInicio h1 {
+  color: rgba(255, 255, 255, 0.6);
+  font-family: consolas;
+  font-weight: 800;
+  font-size: 20px;
+ }
+
+ /* conteudo do Componente onde ficam as informacoes no inicio */
+ .conteudo_inforInicio {
   width: 100%;
-  height: auto;
-  background-size: 100%;
-  background-repeat: no-repeat;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
+  height: 80%;
 }
 
-/*@byCovane: containerInicio principal*/
-#containerInicio {
+ /* Conteudo dos card
+ Conteudo do card1 */
+ .card1_conteudo {
   width: 100%;
-  height: 80vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-#perfil {
-  width: 80vw;
-  height: 80vh;
-  background-color: white;
-  box-shadow: 0 0 2px rgba(0, 0, 0, 0.5);
-  border-radius: 10px;
-  padding: 13px;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: repeat(2, 1fr);
-  background-color: rgb(22, 22, 22);
-  box-shadow: 0 0 5px rgb(93, 91, 91);
-  row-gap: 20px;
-  column-gap: 20px;
-}
-
-#inforInicio {
-  background-color: rgb(33, 31, 31);
-  box-shadow: 0 0 2px rgb(193, 191, 191);
-  border-radius: 10px;
-}
-
-#minhaImagen {
-  width: 11vw;
-}
-
-/*@byContent: Conteiner onde esta a apresentacao*/
-#dados1 {
-  width: 45vw;
-  height: 75vh;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  background-color: rgb(27, 26, 26);
-  box-shadow: 0 0 5px rgb(93, 91, 91);
-}
-
-#apresentacaoTxt {
-  background-color: orangered;
-  box-shadow: 0 0 5px rgb(93, 91, 91);
-  width: 90%;
-  height: 15vh;
-  border-radius: 10px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 3px;
-  color: #eeeeee;
-  user-select: none;
-}
-
-#sobreTxt {
-  background-color: black;
-  box-shadow: 0 0 5px rgb(93, 91, 91);
-  width: 90%;
-  border-radius: 10px;
-  height: 40vh;
-  text-align: justify;
-  font-size: clamp(12px, 13px, 20px);
-  line-height: clamp(100%, 40px, 33px);
+  height: 100%;
   padding: 10px;
-  font-family: "Poppins", sans-serif;
-  margin: 3px;
-  color: white;
-  user-select: none;
-}
-
-#spamAzul {
-  color: rgb(0, 174, 255);
-  font-weight: 700;
-}
-
-#spamVermelho {
-  color: tomato;
-  font-weight: 700;
-}
-
-/*@byCovane: Menu containerInicio*/
-#menu {
-  width: 80%;
-  height: 10vh;
-  background-color: rgb(22, 22, 22);
-  box-shadow: 0 0 5px rgb(93, 91, 91);
-  border-radius: 12px;
-  display: grid;
-  grid-template-columns: repeat(5, 1fr);
-  overflow: hidden;
-  padding: 3px;
-}
-
-#menu li {
-  list-style: none;
-  border-radius: 12px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-#menu li a {
-  text-decoration: none;
-  color: white;
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(10px, 15px, 20px);
-  font-weight: 600;
-  border-radius: 12px;
-  width: 95%;
-  height: 90%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  transition: 0.2s;
-  user-select: none;
-}
-
-#menu li a:hover {
-  box-shadow: 0 0 2px rgb(125, 125, 125);
-  font-size: clamp(11px, 16px, 21px);
-  color: white;
-  font-weight: 700;
-}
-
-/*@byCovane: containerInicio da imagen de perfil e contactos*/
-#imagen {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: space-evenly;
   align-items: center;
-  height: auto;
-  box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
-  border-radius: 12px;
-  width: 45vh;
-  background-color: rgb(255, 255, 255);
+  user-select: none !important;
+ }
+
+ .texto_conteudo_card1 {
+  color: white;
+  font-family: consolas;
+  font-size: 14px;
+  text-align: justify;
+  line-height: 20px;
+  font-weight: 400; 
 }
 
-h1 {
-  font-family: "Poppins", sans-serif;
-  font-size: clamp(12px, 18px, 24px);
-  margin-top: 10px;
-  line-height: 60px;
-}
-
-#contactos {
-  width: 80%;
-  height: 22vh;
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-column-gap: 2vh;
-  grid-row-gap: 2vh;
-  margin-top: 15%;
-}
-
-#contactosImg {
-  width: 10vh;
-}
-
-#powered {
-  width: 40vh;
-  height: 3vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-end;
-  align-items: center;
-}
-
-#powered p {
-  font-size: 8px;
-  font-family: "Poppins", sans-serif;
-  font-weight: 600;
-}
-
-#powered img {
-  width: 3vh;
-  height: 3vh;
-  margin-left: 0.5vw;
-  animation: react 5s infinite linear;
-}
-
-#inforInicio {
-  overflow: hidden;
-}
-#inforInicio:nth-child(1) {
-  background-color: black;
-}
-
-#inforInicio:nth-child(2) {
-  background-color: black;
-  position: relative;
-}
-
-#listaInicio {
-  width: 100%;
-  height: calc(100% - 24%) !important;
-  background-color: #211f1f;
-  list-style: none;
-  position: absolute;
-  top: 24%;
-  display: grid;
-  grid-template-columns: 1f;
-  grid-template-rows: repeat(5, calc(100% / 5));
-}
-
-#listaInicioItem {
-  padding-left: 10px;
-  font-size: clamp(10px, 12px, 14px);
-  font-family: monospace;
-  letter-spacing: 0;
-  font-style: normal;
-  font-weight: 550;
-  color: rgb(230, 237, 243);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  position: relative;
-}
-
-#mudarItem {
-  position: absolute;
-  right: 10px;
+/* botao explorar */
+.btn_card1_conteudo {
   border: 2px solid rgb(93, 149, 69);
   background-color: #238636;
+  font-family: consolas;
+  font-size: 12px !important;
   color: white;
-  border-radius: 4px;
-  font-size: clamp(10px, 12px, 14px);
-  width: 5vw;
-  height: 50%;
-}
-
-#tituloInicioReactUser {
-  border-bottom: 1px solid rgba(2555, 255, 255, 0.6);
-  border-top: none;
-  padding: 10px;
-  width: 100%;
-  height: 20%;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  font-size: 16px;
-  position: absolute;
-  top: 0;
-  left: 0;
-}
-
-#tituloRecepcao {
-  width: 100%;
+  width: 25%;
   height: 5vh;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.6);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  color: white;
-}
-
-#textoRecepcao {
-  width: 100%;
-  height: 30vh;
-  color: white;
-  text-align: justify;
-  font-family: "Poppins", sans-serif;
-  line-height: 5vh;
-  font-size: 15px;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: space-around;
-  background-color: #211f1f;
-}
-
-#btnApresentacao {
-  border: none;
-  width: 10vw;
-  height: 5vh;
-  border: 2px solid rgb(93, 149, 69);
-  background-color: #238636;
-  color: rgb(246, 244, 244);
-  border-radius: 4px;
-  font-family: "Poppins", sans-serif;
+  border-radius: 6px;
   font-size: 15px;
   transition: 0.3s;
-}
-
-#btnApresentacao:hover {
-  width: calc(10vw + 3px);
-  height: calc(5vh + 3px);
-}
-
-.inforInicio {
   display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 
-/* Container dos componentes slide */
-#slideContainer {
-  background-color: black;
-  width: 95%;
-  height: 90%;
-  border: 1px solid rgba(255, 255, 255, 0.4);
-  border-radius: 8px;
+.btn_card1_conteudo:hover {
+  background-color: transparent;
 }
 
-@keyframes react {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+/* Conteudo do card 2 */
+.card2_conteudo {
+  width: 100%;
+  height: 100%;
+  user-select: none;
 }
 
-/*Titulo do componenteno inicio*/
-#tituloInicioReact {
+/* lista do conteudo no card 2 */
+.lista_card2_conteudo {
+  width: 100%;
+  height: 100%;
+}
+
+.lista_card2_conteudo .item_lista_card2 {
+  height: calc(100% / 5);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
   color: white;
-  font-size: clamp(1em, 1em + 1vw, 1em);
+  font-family: consolas;
+  font-size: 12px;
+  font-weight: 500;
+  padding-left: 5px;
 }
 
+ /*@byCovane: Menu containerInicio*/
+ #menu {
+   width: 80%;
+   height: 10vh;
+   background-color: rgb(22, 22, 22);
+   box-shadow: 0 0 5px rgb(93, 91, 91);
+   border-radius: 12px;
+   display: grid;
+   grid-template-columns: repeat(5, 1fr);
+   overflow: hidden;
+   padding: 3px;
+ }
+
+ #menu li {
+   list-style: none;
+   border-radius: 12px;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+ }
+
+ #menu li a {
+   text-decoration: none;
+   color: white;
+   font-family: "Poppins", sans-serif;
+   font-size: clamp(10px, 15px, 20px);
+   font-weight: 600;
+   border-radius: 12px;
+   width: 95%;
+   height: 90%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   transition: 0.2s;
+   user-select: none;
+ }
+
+ #menu li a:hover {
+   box-shadow: 0 0 2px rgb(125, 125, 125);
+   font-size: clamp(11px, 16px, 21px);
+   color: white;
+   font-weight: 700;
+ }
 
 
-@media screen and (min-width: 700px) {
+ @keyframes react {
+   from {
+     transform: rotate(0deg);
+   }
 
-  #containerInicio {
-    height: 100vh;
-  }
+   to {
+     transform: rotate(360deg);
+   }
+ }
 
-  #tituloRecepcao,
-  #tituloInicioReactUser {
-    height: 7vh;
-    font-size: 16px;
-  }
-
-  /* #listaInicio {
-    height: 100%;
-    background-color: black;
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(5, 5vh);
-    position: relative;
-  } */
+ /*Titulo do componenteno inicio*/
+ #tituloInicioReact {
+   color: white;
+   font-size: clamp(1em, 1em + 1vw, 1em);
+ }
 
 
-  #textoRecepcao{
-    height: 80%;
-    font-size: 12px;
-  }
 
-  #menu {
-    font-size: clamp(14px, 16px, 18px);
-  }
+ @media screen and (min-width: 700px) {
 
-  #btnApresentacao {
-    height: 4vh;
-  }
-
-}
-
-@media screen and (max-width: 700px) {
-
-  #inicio {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    height: 135vh;
-  }
-
-  #containerInicio {
-    height: 150vh !important;
-  }
+   #containerInicio {
+     height: 100vh;
+   }
 
 
-  /* #listaInicio {
-    display: flex;
-    flex-direction: column;
-    height: 5vh;
-    background-color: red;
-  } */
+   #menu {
+     font-size: 14px;
+   }
 
-  #textoRecepcao {
-    height: 90%;
-  }
+ }
 
-  #listaInicio {
-    background-color: black;
-  }
-  
- 
-  #menu {
-    width: 95%;
-  }
+ @media screen and (max-width: 700px) {
 
-  #btnApresentacao {
-    height: 4vh;
-  }
+   #inicio {
+     display: flex;
+     flex-direction: column;
+     justify-content: space-around;
+     align-items: center;
+     height: 135vh;
+   }
 
-  #listaInicioItem {
-    display:flex;
-    justify-content: flex-start;
-    align-items: center;
-  }
+   #containerInicio {
+     height: 150vh !important;
+   }
 
-  #textoRecepcao,
-  #listaInicioItem,
-  #btnApresentacao,
-  #menu li a{
-    font-size: 10px;
-  }
+   #menu {
+     width: 95%;
+   }
 
-  #tituloInicioReactUser,
-  #tituloRecepcao {
-    font-size: 14px;
-  }
+   #perfil {
+     height: 90vh;
+     width: 95%;
+   }
 
-  #perfil {
-    height: 90vh;
-    width: 95%;
-  }
-  #mudarItem {
-    width: 8vw;
-    height: 2vh;
-  }
-}
+ }
 
-@media screen and (max-width: 480px) {
+ @media screen and (max-width: 480px) {
 
-  #menu {
-    height: 7vh !important;
-    margin-top: 1vh;
-  }
+   #menu {
+     height: 7vh !important;
+     margin-top: 1vh;
+   }
 
-  #btnApresentacao {
-    width: 20vw;
-  }
+   #containerInicio {
+     height: auto !important;
+   }
 
-  #containerInicio {
-    height: auto !important;
-  }
-
-  #mudarItem {
-    width: 10vw !important;
-    font-size: clamp(8px, 10px, 12px);
-  }
-  
-  #perfil {
-    height: calc((38vh * 3) + 8vh) !important;
-  }
+   #perfil {
+     height: calc((38vh * 3) + 8vh) !important;
+   }
 
 
-  #perfil {
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(4, 38vh);
-    margin-top: 2vh;
-  }
+   #perfil {
+     grid-template-columns: 1fr;
+     grid-template-rows: repeat(4, 38vh);
+     margin-top: 2vh;
+   }
 
-
-}
+ }

@@ -74,8 +74,6 @@ function Sobre() {
     <div id="sobreContainer">
       
       <div id="sobrePainel">
-        <Card />
-        <DescricaoSobre />
       </div>
     </div>
   );
