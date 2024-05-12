@@ -1,4 +1,4 @@
-/*Conteiner principal da secao*/
+/*Conteiner principal da seccao*/
 #sobreContainer {
   width: 100%;
   height: 100vh;
@@ -7,211 +7,142 @@
   align-items: center;
 }
 
-/*Conainer onde ira fiacar o conteudo*/
-#sobrePainel {
-  width: 90%;
-  height: 90vh;
+.card_container {
+  width: 80vw;
+  height: 80vh;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 5px rgb(93, 91, 91);
   border-radius: 10px;
   display: flex;
-  display: row;
-  justify-content: space-around;
   align-items: center;
+  justify-content: space-evenly;
 }
 
-#cardSobre {
-  width: 25vw;
-  height: 90%;
-  background-color: black;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  border-radius: 10px;
-  transition: 0.3s;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-}
-
-/*Descricao onde esta o conteudo do sobre*/
-#descricaoSobre {
-  width: 40vw;
-  height: 90%;
-  background-color: black;
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-around;
-  align-items: center;
-  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
-}
-
-#cardSobreFotoPerfil {
-  width: 90%;
-  height: 25vh;
-  border-radius: 10px;
-  background-color: black;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding: 10px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-
-#cardContactoImg {
-  border-radius: 10px;
-}
-
-#cardContactoImg:nth-child(1) {
-  width: 3vw;
-}
-
-#cardContactoImg:nth-child(2) {
-  width: 3vw;
-}
-
-#cardContactoImg:nth-child(3) {
-  width: 3vw;
-}
-
-#cardContactoImg:nth-child(4) {
-  width: 3vw;
-}
-
-#cardSobreText {
-  width: 95%;
-  height: 8vh;
-  background-color: black;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  border-radius: 8px;
-  color: white;
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  padding-left: 20px;
-  font-family: 'Poppins', sans-serif;
-}
-
-#cardSobreText:nth-child(1) {
-  color: rgb(152, 205, 203);
-}
-
-#cardSobreContactos {
-  width: 95%;
-  height: 5vw;
-  border-radius: 10px;
-  color: black;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
+.perfil_card {
+  width: 300px;
+  height: 230px;
   background-color: white;
-  padding-left: 20px;
-  padding-right: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 5px rgb(93, 91, 91);
+  position: relative;
+  user-select: none;
 }
 
+.perfil_card::before {
+  content: "";
+  width: 150px;
+  height: 150px;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 2px rgb(93, 91, 91);
+  border-radius: 10px;
+  position: absolute;
+  left: calc(150px / 2);
+  bottom: calc(330px - 150px);
+  cursor: pointer;
+}
 
-/*Div onde estarao as informacaoes do card*/
-#cardSobreInfo {
-  width: 90%;
-  height: 40vh;
-  border-radius: 8px;
-  background-color: black;
-  box-shadow: 0 0 3px rgba(255, 255, 255, 0.6);
+.perfil_card::after {
+  content: "EMERSON COVANE";
+  width: 150px;
+  height: 30px;
+  font-size: 15px;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  justify-content: space-around;
+  justify-content: center;
+  align-items: center;
+  bottom: 130px;
+  left: calc(150px / 2);
+}
+
+.card_info {
+  width: 250px;
+  height: 50px;
+  box-shadow: 0 0 1px rgb(93, 91, 91);
+  border-radius: 10px;
+  position: absolute;
+  left: calc(50px / 2);
+  bottom: 20px;
+  display: flex;
+  justify-content: space-evenly;
   align-items: center;
 }
 
-
-#textoLocSobre {
-  width: 95%;
-  height: 30vh;
-  border-radius: 8px;
+.card_info::after {
+  content: "Programador Jr.";
+  position: absolute;
+  font-size: 14px;
+  font-family: consolas;
+  font-weight: 900;
   display: flex;
-  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: 30px;
+  bottom: 60px;
+  color: rgba(0, 0, 0, 0.56);
+}
+
+.card_info img {
+  width: 30px;
+  cursor: pointer;
+}
+
+.sobre_texto_container {
+  width: 400px;
+  height: 230px;
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 2px rgb(93, 91, 91);
+  border-radius: 10px;
+  border-bottom-left-radius: 0 !important;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-
-#tituloTextoSobre {
-  color: rgb(152, 205, 203);
-  font-size: clamp(1rem, 1vw + 0.3rem, 1.5rem);
-  font-family: "Poppins", sans-serif;
-  width: 100%;
-  background-color: #0d1117;
-  border-top-right-radius: 8px;
-  border-top-left-radius: 8px;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  height: 10vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.sobre_texto1 {
+  width: 390px;
+  height: 220px;
+  
+  background-color: rgb(22, 22, 22);
+  box-shadow: 0 0 2px rgb(93, 91, 91);
+  border-radius: 10px;
 }
 
-#textoSobre {
-  text-align: justify;
-  font-family: ui-monospace;
-  font-size: clamp(10px, 15px, 20px);
-  height: 20vh;
-  letter-spacing: 0;
-  font-style: normal;
-  font-weight: 400;
-  color: rgb(230, 237, 243);
-  padding: 20px;
-  background-color: #161b22;
-  box-shadow: 0 0 2px rgba(255, 255, 255, 0.6);
-  border-bottom-left-radius: 8px;
-  border-bottom-right-radius: 8px;
+ .sobre_botao1,
+ .sobre_botao2,
+ .sobre_botao3 {
+  width: 80px;
+  height: 30px;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background-color: rgb(22, 22, 22);
+  border-top: none !important;
+  border: 1px solid rgb(93, 91, 91, 0.5);
+  color: white;
+  font-family: 'Poppins', sans-serif;
+  font-size: 12px;
+  position: absolute;
 }
 
-
-
-#cardSobreFoto {
-  width: 20vh;
-  height: 20vh;
-  background-color: rgb(152, 205, 203);
-  background-image: url(../Imagens/foto-perfil.svg);
-  border-radius: 50%;
+.sobre_botao1 {
+  bottom: -30px;
+  left: -0.5px;
+  border-right: none !important;
+  border-bottom:1px solid #E90064;
 }
 
-
-@media screen and (max-width: 700px) {
-  #sobreContainer {
-    height: auto;
-  }
-
-  #sobrePainel {
-    height: 130vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-  }
-
-  #cardSobre {
-    height: 70vh;
-    width: 80vw;
-  }
-
-  #descricaoSobre {
-    height: 40vh;
-    width: 80vw;
-  }
+.sobre_botao2 {
+  bottom: -30px;
+  left: 80px;
+  border-left: none !important;
+  border-right: none !important;
 }
 
-@media screen and (max-width: 480px) {
-  #cardSobre {
-    height: 70vh;
-    width: 90vw;
-  }
-
-  #descricaoSobre {
-    height: 40vh;
-    width: 90vw;
-  }
+.sobre_botao3 {
+  border-left: none !important;
+  bottom: -30px;
+  left: 160px;
 }
