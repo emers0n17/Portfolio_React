@@ -1,22 +1,24 @@
 /* Estilos para o componete Projecto */
 
 .conteudoProjectos {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-evenly;
-    background-color: rgb(27, 26, 26);
-    box-shadow: 0 0 2px rgb(93, 91, 91);
-    border-radius: 12px;
-    overflow: hidden;
-    width: 80%;
-    height: calc(50vh + 20vh);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  background-color: rgb(27, 26, 26);
+  box-shadow: 0 0 2px rgb(93, 91, 91);
+  border-radius: 12px;
+  overflow: hidden;
+  width: 80%;
+  height: calc(50vh + 20vh);
 }
+
 
 #textoProjectos {
   color: rgba(255, 255, 255, 0.669);
+  font-family: consolas;
   width: auto;
-  height: 5vh;
+  height: 20px;
   font-size: clamp(10px, 14px, 16px);
   display: flex;
   justify-content: space-between;
@@ -24,52 +26,53 @@
 }
 
 #textoProjectoImagen {
-  width: 2.5vw;
+  width: 40px;
   margin-right: 10px;
 }
 
 .containerProjecto {
-  width: 60vw;
-  height: 45vh;
+  width: 900px;
+  height: 300px;
   background-color: rgb(33, 31, 31);
   box-shadow: 0 0 2px rgb(193, 191, 191);
   border-radius: 10px;
   overflow: hidden;
   user-select: none;
-
-  display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  display: flex;
 }
 
 .imagem_do_site_projecto {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 450px;
 }
 
 .descricao_do_projecto_projecto {
-  display: grid;
-  grid-template-rows: repeat(3, 20% 30% 20% 20%);
+  width: 450px;
   row-gap: 5px;
+  position: relative;
 }
 
 .descricaoProjecto {
   padding: 10px;
-    text-align: justify;
-    color: white;
-    line-height: 140%;
-    font-family: 'Poppins', sans-serif;
-    font-size: 14px;
-    font-weight: 400;
+  text-align: justify;
+  color: white;
+  line-height: 140%;
+  font-family: consolas;
+  font-size: 14px;
+  font-weight: 400;
+  height: 100px;
 }
 
 .tituloDoprojecto {
+  height: 70px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: white;
-  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  color: rgba(255, 255, 255, 0.6);
+  font-family: consolas;
   font-size: clamp(14px, 18px, 22px);
 }
 
@@ -80,39 +83,36 @@
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  height: 50px;
 }
 
-.image_tecnologia {
-  width: calc((100% / 4) - 5px);
-  padding: 5px;
+.imagen_tecnologia_usada_projecto img {
+  width: 40px;
 }
-
 
 .imagem_do_projecto {
-    background-color: white;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    width: 90%;
-    height: 90%;
-    border-radius: 10px;
+  background-color: white;
+  background-repeat: no-repeat;
+  background-size: 100%;
+  height: 90%;
+  border-radius: 10px;
 }
 
 .swiper {
-    width: 60vw;
-    height: 45vh;
-  }
-  
-  .swiper-slide {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    border-radius: 18px;
-    font-size: 22px;
-    font-weight: bold;
-    color: #fff;
-    background-color: rgb(27, 26, 26);
-    box-shadow: 0 0 2px rgb(93, 91, 91);
-  }
+  width: 900px;
+  height: 300px;
+}
+
+.swiper-slide {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 18px;
+  font-size: 22px;
+  font-weight: bold;
+  background-color: rgb(27, 26, 26);
+  box-shadow: 0 0 2px rgb(93, 91, 91);
+}
 
 
 /* Estilos para o componente principal Projectos */
@@ -125,21 +125,24 @@
 }
 
 .redirecionamentoProjecto {
-  width: 50%;
+  width: 200px;
+  height: 50px;
   margin-left: 25%;
   background-color: white;
   border-radius: 10px;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
+  position: absolute;
+  bottom: 15px;
 }
 
 .redirecionamentoProjecto a {
   width: 4vw;
   height: 5vh;
   text-decoration: none;
-  color: color(srgb red green blue);
-  font-family: 'Poppins', sans-serif;
+  color: black;
+  font-family: consolas;
   font-size: 12px;
   display: flex;
   justify-content: space-between;
@@ -154,19 +157,16 @@
   width: 24px;
 }
 
-.imagen_tecnologia_usada_projecto {
-
-}
 
 
-@media  screen and (min-width: 1201px) {
+@media screen and (min-width: 1201px) {
 
-  .image_tecnologia  {
+  .image_tecnologia {
     width: 4vw;
   }
 }
 
-@media  screen and (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .imagem_do_site_projecto {
     display: flex;
     flex-direction: column;
@@ -181,42 +181,71 @@
 }
 
 @media screen and (max-width: 480px) {
+
+
   .containerProjecto {
-    height: calc( 45vh * 2);
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 20vh 1fr);
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
   }
 
-  .conteudoProjectos {
-    height: calc(45vh * 2 - 5vh);
+  .containerProjecto {
+    display: flex;
+    flex-direction: column;
+    height: 700px;
+    justify-content: space-around;
+    align-items: center;
   }
 
-  .descricao_do_projecto_projecto {
-    display: grid;
-    grid-template-rows: repeat(3, 20% 60% 30% 25%);
+  .containerProjecto .imagem_do_site_projecto{
+    width: 280px;
+    height: 280px;
   }
 
-  .descricaoProjecto {
-    font-size: 12px;
-    line-height: 110%;
-  }
-  
-  .imagen_tecnologia_usada_projecto {
-  }
-
-  .image_tecnologia {
-    width: calc((100% / 4) - 5px);
-  }
-
-  .redirecionamentoProjecto {
+  .containerProjecto .descricao_do_projecto_projecto {
+    width: 280px;
+    height: 370px;
   }
 
   .swiper {
-    height: calc(45vh + 10vh);
+    height: 600px;
+    width: 295px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
-  .imagem_do_projecto {
+  .containerProjecto {
+    width: 290px;
+    height: 600px;
   }
+  
+  .swiper-slide {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .conteudoProjectos {
+    height: 900px;
+  }
+
+  .descricao_do_projecto_projecto {
+  }
+
+  .redirecionamentoProjecto {
+    bottom: 320px;
+    left: calc(290px / 2 - 105px);
+    margin: 0 !important;
+    padding-left: 0;
+  }
+
+  .descricaoProjecto {
+    height: 170px;
+  }
+
 }
-
