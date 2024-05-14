@@ -195,7 +195,12 @@
    color: white;
    font-size: clamp(1em, 1em + 1vw, 1em);
  }
+ @media screen and (min-width: 1201px){
+  #containerInicio {
+    height: 100vh;
+  }
 
+ }
 
 
  @media screen and (max-width: 1200px) {
