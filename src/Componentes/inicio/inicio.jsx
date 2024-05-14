@@ -38,14 +38,6 @@ function Menu() {
 }
 
 
-function Slide() {
-  return (
-    <div id="slideContainer">
-      {/* Your 3D model goes here */}
-    </div>
-  );
-}
-
 
 
 //Componente onde irao ficar as informacoes do inicio ou card
@@ -76,24 +68,6 @@ function Conteudo_card1(){
     </div>
   )
 }
-
-// function InfoInicioReact2() {
-//   const nome = "/ inicio";
-
-//   return (
-//     <div id="inforInicio">
-//       <h1 id="tituloInicioReact"></h1>
-//       <h1 id="tituloInicioReactUser">{nome}</h1>
-//       <ol type="1" id="listaInicio">
-//         <p id="listaInicioItem">- 👋 <TypeAnimation sequence={["Olá, eu sou Emerson Covane...", 3000]} speed={60} repeat={Infinity} id="listaInicioItem" /> </p>
-//         <p id="listaInicioItem">- 😄 <TypeAnimation sequence={["Visite meu perfil ...", 3000]} speed={40} repeat={Infinity} id="listaInicioItem" /> </p>
-//         <p id="listaInicioItem">- ⚡ <TypeAnimation sequence={["Desenvolvedor web ...", 3000]} speed={40} repeat={Infinity} id="listaInicioItem" /> </p>
-//         <p id="listaInicioItem">- 🌱 <TypeAnimation sequence={["Em busca do conhecimento..."]} speed={60} repeat={Infinity} id="listaInicioItem" /> </p>
-//         <p id="listaInicioItem">- 👀 <TypeAnimation sequence={["Dê um feedback...", 3000]} speed={30} repeat={Infinity} id="listaInicioItem" /> </p>
-//       </ol>
-//     </div>
-//   );
-// }
 
 
 //Conteudo do segundo card

@@ -198,15 +198,28 @@
 
 
 
- @media screen and (min-width: 700px) {
+ @media screen and (max-width: 1200px) {
 
    #containerInicio {
      height: 100vh;
    }
 
+   .btn_card1_conteudo {
+    width: 30%;
+    height: 40px;
+   }
+
+   #perfil {
+    height: 900px;
+   }
+
+   #containerInicio{
+    height: 1100px;
+   }
 
    #menu {
      font-size: 14px;
+     height: 100px;
    }
 
  }
@@ -227,6 +240,7 @@
 
    #menu {
      width: 95%;
+     height: 100px;
    }
 
    #perfil {
