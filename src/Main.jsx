@@ -4,6 +4,7 @@ import Habilidades from "./Componentes/habilidades/habilidades";
 import './Estilos/styleMain.css'
 import Sobre from "./Componentes/sobre/sobre";
 import Projectos from "./Componentes/projectos/projectos";
+import Trajetoria from "./Componentes/trajetoria/trajetoria";
 
 // import { register } from 'swiper/element/bundle'
 // import 'swiper/css';
@@ -40,6 +41,8 @@ class Main extends React.Component {
         <Habilidades />
         <TituloSecao desc="Meus projectos"/>
         <Projectos />
+        <TituloSecao desc="Road Map"/>
+        <Trajetoria />
       </>
     );
   }

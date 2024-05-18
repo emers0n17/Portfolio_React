@@ -1,0 +1,110 @@
+.trajetoria_fundo {
+    width: 100%;
+    height: 200vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.trajetoria_container {
+    width: 80%;
+    height: 180vh;
+    border-radius: 10px;
+    background-color: rgb(27, 26, 26);
+    box-shadow: 0 0 2px rgb(93, 91, 91);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.trajetoria_level {
+    width: 300px;
+    height: 200px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(255, 255, 255, 0.6);
+    margin-top: 200px;
+    position: relative;
+    margin-left: 150px;
+}
+
+.trajetoria_reta_encima {
+    width: 4px;
+    height: 200px;
+    background: linear-gradient(to bottom, yellow, green);
+    border-top-left-radius: 2px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+    box-shadow: 0 0 100px rgb(0, 217, 255),
+        0 0 50px rgb(0, 132, 255),
+        0 0 100px rgb(0, 98, 255);
+    position: relative;
+    bottom: -230px;
+}
+
+.trajetoria_reta_encima::before {
+    content: '2020/ 01/ 01';
+    width: 200px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: consolas;
+    color: white;
+    border-radius: 10px;
+    background-color: rgb(27, 26, 26);
+    box-shadow: 0 0 2px rgb(93, 91, 91);
+    position: absolute;
+    left: -220px;
+    top: 50px;
+}
+
+.trajetoria_reta_encima::after{
+    content: 'Novo 🌱';
+    width: 100px;
+    height: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: consolas;
+    color: white;
+    border-radius: 8px;
+    background-color: #E90064;
+    box-shadow: 0 0 2px rgb(93, 91, 91);
+    position: absolute;
+    left: -165px;
+    top: 30px;
+}
+
+.trajetoria_level::after {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    box-shadow: 0 0 20px rgb(255, 0, 153),
+        0 0 100px rgb(255, 0, 153);
+    position: absolute;
+    left: -5px;
+    top: -5px;
+}
+
+.trajetoria_level::before {
+    content: '';
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    box-shadow: 0 0 20px rgb(255, 0, 153),
+        0 0 100px rgb(255, 0, 153);
+    background-color: rgb(27, 26, 26);
+    border: 2px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    left: -5px;
+    bottom: -5px;
+}
