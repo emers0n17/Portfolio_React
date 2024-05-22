@@ -61,10 +61,7 @@ function Projectos() {
             modules={[EffectCards]}
           >
             <SwiperSlide><Projecto descricao={slides[0].descricao} titulo={"Loja online"} tecnologia2={java} tecnologia3={mysql} alt2={"Java"} alt3={"mySQL"} imagen={infomarket} /></SwiperSlide>
-            <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
-            <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
-            <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
-            <SwiperSlide><Projecto imagen={background} /></SwiperSlide>
+            
           </Swiper>
         </div>
       </div>

@@ -1,6 +1,6 @@
 .trajetoria_fundo {
     width: 100%;
-    height: 200vh;
+    height: 450vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,13 +8,14 @@
 
 .trajetoria_container {
     width: 80%;
-    height: 180vh;
+    height: 400vh;
     border-radius: 10px;
     background-color: rgb(27, 26, 26);
     box-shadow: 0 0 2px rgb(93, 91, 91);
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
     justify-content: flex-start;
 }
 
@@ -52,8 +53,8 @@
 .trajetoria_level_conteudo_img img:hover {
     transform: scale(1.5);
     overflow: hidden;
-    box-shadow: 0 0 3px rgb(255, 0, 153),
-    0 0 30px rgb(255, 0, 153);
+    box-shadow: 0 0 2px rgb(0, 255, 0),
+    0 0 20px #E90064;
 }
 
 .trajetoria_level_conteudo_texto {
@@ -155,4 +156,90 @@
     position: absolute;
     left: -5px;
     bottom: -5px;
+}
+
+.trajetoria_reta_enbaixo {
+    background-color: red;
+    width: 20px;
+    height: 450px;
+    position: relative;
+    z-index: 1;
+    bottom: 120px;
+    right: -310px;
+    background: linear-gradient(to bottom, yellow, greenyellow, green);
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.trajetoria_reta_enbaixo::after {
+    content: '';
+    width: 25px;
+    height: 25px;
+    background-color: rgb(27, 26, 26);
+    border: 1px solid rgba(255, 255, 255, 0.6);
+    position: absolute;
+    top: -13px;
+    left: -22px;
+    border-radius: 100%;
+}
+
+.trajetoria_reta_enbaixo_preenchimento {
+    background-color: rgb(27, 26, 26);
+    width: 15px;
+    height: 440px;
+    position: absolute;
+    top: 5px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;
+}
+
+.total_trajetoria {
+    z-index: 1;
+    position: absolute;
+    bottom: 0;
+
+    width: 330px;
+    height: 230px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px rgb(255, 255, 255, 0.6);
+    margin-top: 200px;
+    margin-left: 150px;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    border-top-left-radius: 0;
+    padding: 5px;
+}
+
+.total_trajetoria::after {
+    content: 'Skill colection';
+    width: 100px;
+    z-index: 1;
+    height: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-family: consolas;
+    color: white;
+    border-radius: 8px;
+    background-color: green;
+    box-shadow: 0 0 2px rgb(93, 91, 91);
+    position: absolute;
+    left: -1px;
+    top: -40px;
+    border-top-left-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 0;
+}
+
+
+.total_trajetoria img {
+    width: 50px;
+    height: 50px;
+    box-shadow: 0 0 2px rgba(255, 255, 255, 0.3);
+    margin-top: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    transition: 0.3s;
 }

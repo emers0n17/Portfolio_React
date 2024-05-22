@@ -34,14 +34,21 @@ class Main extends React.Component {
     return (
       <>
         <Inicio />
-        <Espaco height="2" color="blue" />
+        <Espaco height="10" color="blue" />
         <TituloSecao   desc="Sobre min"/>
+        <Espaco height="10" color="blue" />
         <Sobre />
+        <Espaco height="10" color="blue" />
         <TituloSecao desc="Minhas habilidades"/>
+        <Espaco height="10" color="blue" />
         <Habilidades />
+        <Espaco height="10" color="blue" />
         <TituloSecao desc="Meus projectos"/>
+        <Espaco height="10" color="blue" />
         <Projectos />
+        <Espaco height="10" color="blue" />
         <TituloSecao desc="Road Map"/>
+        <Espaco height="10" color="blue" />
         <Trajetoria />
       </>
     );

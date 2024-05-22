@@ -9,7 +9,7 @@
   box-shadow: 0 0 2px rgb(93, 91, 91);
   border-radius: 12px;
   overflow: hidden;
-  width: 80%;
+  min-width: 80%;
   height: calc(50vh + 20vh);
 }
 

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+
+<ul id="lista"></ul>
+
+    <script>
+
+const dados = {
+      descricao: [
+        'No ano de 2019 dei os meus primeiros passos nesse mundo, tive o interesse e criar modelos 3d usando a ferramenta Blender.',
+        'No ano de 2020, fui introduzido ao mundo da programacao web e fui introduzido ao HTML5 o CSS3 e ao JSECMA6',
+        'No ano de 2021, Alem de aprender PHP, e decidi aprender a criar video jogos e para isso decidi investir no Unreal Engine e a linguagem C++.'],
+      styles: [
+        [`white`],
+        [`#f16529`, `#3178c6`, `#f7df1e`],
+        [`#777bb3`, `white`]
+      ]
+    }
+    document.querySelector('#lista').innerHTML += dados.styles[1].map((item, id) => (
+      `<li key=${1}>${item}</li>`
+    ))
+    </script>
+  </body>
+</html>
