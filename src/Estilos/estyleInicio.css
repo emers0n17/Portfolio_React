@@ -7,13 +7,13 @@
  }
 
  .bannerInicio {
-   width: 80%;
+   width: 100%;
    height: 500px;
    background-color: crimson;
    border-radius: 8px;
    box-shadow: 0 0 5px rgb(93, 91, 91);
    background: url(../Imagens/background.webp) !important;
-   background-repeat: no-repeat;
+   background-repeat: no-repeat !important;
    background-size: 80% !important;
    background-position: center;
    display: flex;
