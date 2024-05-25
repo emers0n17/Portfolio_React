@@ -12,7 +12,7 @@
    background-color: crimson;
    border-radius: 8px;
    box-shadow: 0 0 5px rgb(93, 91, 91);
-   background: url(../Imagens/background.jpg);
+   background: url(../Imagens/background.png);
    background-repeat: no-repeat;
    background-size: 100%;
    background-position: center;
@@ -63,7 +63,7 @@
 
  .lista_card3_conteudo {
   background-color: white;
-  height: 180px;
+  height: 100%;
  }
 
  .lista_card3_conteudo li {

@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-import React, { useState, useEffect } from "react";
+import React from "react";
 import { TypeAnimation } from "react-type-animation";
 
 
@@ -8,8 +8,6 @@ import facebook from "../../Imagens/facebook-color-svgrepo-com.svg";
 import instagram from "../../Imagens/instagram-1-svgrepo-com.svg";
 import github from "../../Imagens/github-142-svgrepo-com.svg";
 import linkedin from "../../Imagens/linkedin-svgrepo-com.svg";
-import correto from "../../Imagens/correto.png";
-import reactLogo from "../../Imagens/react.png";
 
 //A importar o css
 import "../../Estilos/estyleInicio.css";
