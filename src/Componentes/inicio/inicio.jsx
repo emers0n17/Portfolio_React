@@ -8,6 +8,7 @@ import facebook from "../../Imagens/facebook-color-svgrepo-com.svg";
 import instagram from "../../Imagens/instagram-1-svgrepo-com.svg";
 import github from "../../Imagens/github-142-svgrepo-com.svg";
 import linkedin from "../../Imagens/linkedin-svgrepo-com.svg";
+import background from '../../Imagens/background.webp'
 
 //A importar o css
 import "../../Estilos/estyleInicio.css";
@@ -41,10 +42,12 @@ function Menu() {
 function Banner() {
   return (
     <div className="bannerInicio">
+      <img src={background} alt="" />
         <div className="bannerInicio_texto">
 <TypeAnimation sequence={["Ola!...", "Bem vindo ao meu Portfolio...", 1000]} speed={300} />
          <button id="bannerBotao" className="btn_card1_conteudo">Comecar!</button>
         </div>
+
     </div>
   )
 }
