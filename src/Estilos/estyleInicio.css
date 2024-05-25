@@ -14,7 +14,7 @@
    box-shadow: 0 0 5px rgb(93, 91, 91);
    background: url(../Imagens/background.webp) !important;
    background-repeat: no-repeat;
-   background-size: 100%;
+   background-size: 80% !important;
    background-position: center;
    display: flex;
    justify-content: center;
