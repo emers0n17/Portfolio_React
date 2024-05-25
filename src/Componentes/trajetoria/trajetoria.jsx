@@ -93,7 +93,7 @@ function Colecao(){
 function Trajetoria() {
     return (
         <div className="trajetoria_fundo">
-            <div className='trajetoria_container'>
+            <div id='trajetoria_fundo' className='trajetoria_container'>
                 <Level data='2019/01/01' fundoImg={dados.styles[0]} espaco={50} descricao={dados.descricao[0]} imagens={dados.imagens[0]} />
                 <Level data='2020/01/01' fundoImg={dados.styles[1]} espaco={250} descricao={dados.descricao[1]} imagens={dados.imagens[1]} />
                 <Level data='2021/01/01' fundoImg={dados.styles[2]} espaco={250} descricao={dados.descricao[2]} imagens={dados.imagens[2]} />

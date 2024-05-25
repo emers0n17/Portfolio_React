@@ -29,7 +29,10 @@ function Menu() {
         <a href="#conatinerProjectos">Projectos</a>
       </li>
       <li>
-        <a href="#menu">Contacto</a>
+        <a href="#trajetoria_fundo">Trajetoria</a>
+      </li>
+      <li>
+        <a href="#contacto_fundo">Contacto</a>
       </li>
     </div>
   );

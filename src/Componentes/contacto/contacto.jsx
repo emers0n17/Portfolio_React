@@ -101,7 +101,7 @@ function Rodape() {
 
 function Contacto() {
   return (
-    <div className="contacto_fundo">
+    <div id="contacto_fundo" className="contacto_fundo">
       <FormularioContacto />
       <Rodape />
     </div>
