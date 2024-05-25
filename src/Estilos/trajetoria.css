@@ -1,6 +1,6 @@
 .trajetoria_fundo {
     width: 100%;
-    height: 450vh;
+    height: 3500px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -8,7 +8,7 @@
 
 .trajetoria_container {
     width: 80%;
-    height: 400vh;
+    height: 500vh;
     border-radius: 10px;
     background-color: rgb(27, 26, 26);
     box-shadow: 0 0 2px rgb(93, 91, 91);
@@ -130,6 +130,9 @@
     top: 30px;
 }
 
+
+
+
 .trajetoria_level::after {
     content: '';
     width: 10px;
@@ -143,6 +146,7 @@
     left: -5px;
     top: -5px;
 }
+
 
 .trajetoria_level::before {
     content: '';
@@ -183,6 +187,8 @@
     border-radius: 100%;
 }
 
+
+
 .trajetoria_reta_enbaixo_preenchimento {
     background-color: rgb(27, 26, 26);
     width: 15px;
@@ -196,8 +202,7 @@
 .total_trajetoria {
     z-index: 1;
     position: absolute;
-    bottom: 0;
-
+    bottom: 280px;
     width: 330px;
     height: 230px;
     border-radius: 10px;
@@ -208,6 +213,7 @@
     grid-template-columns: repeat(5, 1fr);
     border-top-left-radius: 0;
     padding: 5px;
+    left: 297px;
 }
 
 .total_trajetoria::after {
@@ -242,4 +248,45 @@
     padding: 5px;
     border-radius: 10px;
     transition: 0.3s;
+}
+
+.total_trajetoria img:hover {
+    transform: scale(1.4);
+}
+
+@media screen and (max-width: 900px) {
+    .trajetoria_reta_encima::after {
+        left: 100px ;
+    }
+
+    .trajetoria_reta_enbaixo_data {
+        left: 45px;
+    }
+
+    .trajetoria_level {
+        margin-left: 0;
+    }
+
+    .trajetoria_fundo {
+        height: 3700px;
+    }
+
+    .trajetoria_container {
+        height: 3500px;
+        width: 98%;
+    }
+
+    .total_trajetoria {
+        position: absolute;
+        bottom: 500px;
+        left: -120px;
+    }
+
+    .trajetoria_reta_enbaixo {
+        right: -310px;
+    }
+
+    .trajetoria_reta_enbaixo_preenchimento {
+        left: -1px;
+    }
 }

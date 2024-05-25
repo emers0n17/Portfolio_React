@@ -76,7 +76,7 @@ const dados = {
         ['#777bb3', 'white'],
         ['#777bb3', '#f7df1e',  '#3178c6',  'white', 'white'], 
         ['white' ,'white', 'white'],
-        ['transparent' ,'transparent', 'transparent', 'transparent', 'transparent'],
+        ['#222222' ,'transparent', 'transparent', 'transparent', 'transparent'],
     ]
 }
 

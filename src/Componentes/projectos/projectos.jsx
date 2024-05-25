@@ -3,7 +3,6 @@ import Projecto from "./projecto";
 import { EffectCards } from "swiper/modules";
 //Imagens
 import deslizar from '../../Imagens/deslize.png'
-import background from "../../Imagens/background2.png";
 import infomarket from "../../Imagens/infomarket.jpg"
 import java from '../../Imagens/java-svgrepo-com.svg'
 import mysql from '../../Imagens/mysql-svgrepo-com.svg'

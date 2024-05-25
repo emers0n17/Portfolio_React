@@ -1,24 +1,102 @@
  #inicio {
    width: 100%;
    height: auto;
+   min-height: 1200px;
    background-size: 100%;
    background-repeat: no-repeat;
+ }
+
+ .bannerInicio {
+   width: 80%;
+   height: 500px;
+   background-color: crimson;
+   border-radius: 8px;
+   box-shadow: 0 0 5px rgb(93, 91, 91);
+   background: url(../Imagens/background.jpg);
+   background-repeat: no-repeat;
+   background-size: 100%;
+   background-position: center;
    display: flex;
-   flex-direction: column;
+   justify-content: center;
    align-items: center;
-   justify-content: space-around;
+ }
+
+ #bannerBotao {
+  border: 1px solid blueviolet;
+  background-color: transparent;
+  color: blueviolet;
+  font-weight: 700;
+}
+
+#bannerBotao:hover {
+  background-color: blueviolet;
+  color: white;
+}
+
+ .bannerInicio_texto {
+  background-color: white;
+  width: 300px;
+  height: 100px;
+  border-radius: 8px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.6);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: consolas;
+ }
+
+ .bannerInicio_texto h1 {
+  font-size: 20px;
  }
 
  /*@byCovane: containerInicio principal*/
  #containerInicio {
    width: 100%;
-   height: 80vh;
+   height: 1200px !important;
    display: flex;
    flex-direction: column;
-   justify-content: space-around;
+   justify-content: space-evenly;
    align-items: center;
  }
 
+
+ .lista_card3_conteudo {
+  background-color: white;
+  height: 180px;
+ }
+
+ .lista_card3_conteudo li {
+  height: calc(100% / 4);
+  border: 1px solid white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+ }
+
+ #lista_card4_conteudo li{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 20px;
+ }
+
+ .lista_card3_conteudo li a{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 14px;
+  font-family: 'Poppins', sans-serif;
+  text-decoration: none;
+  color: black;
+ }
+
+ .lista_card3_conteudo li img{
+  width: 40px;
+  margin-right: 20px;
+  margin-left: 10px;
+ }
+
+ 
+ 
  #perfil {
    width: 80vw;
    height: 80vh;
@@ -43,6 +121,7 @@
    flex-direction: column;
    overflow: hidden;
  }
+
  /* titulo do Componente onde ficam as informacoes no inicio */
  .tituto_inforInicio {
    width: 100%;
@@ -54,91 +133,91 @@
  }
 
  .tituto_inforInicio h1 {
-  color: rgba(255, 255, 255, 0.6);
-  font-family: consolas;
-  font-weight: 800;
-  font-size: 20px;
+   color: rgba(255, 255, 255, 0.6);
+   font-family: consolas;
+   font-weight: 800;
+   font-size: 20px;
  }
 
  /* conteudo do Componente onde ficam as informacoes no inicio */
  .conteudo_inforInicio {
-  width: 100%;
-  height: 80%;
-}
+   width: 100%;
+   height: 80%;
+ }
 
  /* Conteudo dos card
  Conteudo do card1 */
  .card1_conteudo {
-  width: 100%;
-  height: 100%;
-  padding: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-evenly;
-  align-items: center;
-  user-select: none !important;
+   width: 100%;
+   height: 100%;
+   padding: 10px;
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   user-select: none !important;
  }
 
  .texto_conteudo_card1 {
-  color: white;
-  font-family: consolas;
-  font-size: 14px;
-  text-align: justify;
-  line-height: 20px;
-  font-weight: 400; 
-}
+   color: white;
+   font-family: consolas;
+   font-size: 14px;
+   text-align: justify;
+   line-height: 20px;
+   font-weight: 400;
+ }
 
-/* botao explorar */
-.btn_card1_conteudo {
-  border: 2px solid rgb(93, 149, 69);
-  background-color: #238636;
-  font-family: consolas;
-  font-size: 12px !important;
-  color: white;
-  width: 25%;
-  height: 5vh;
-  border-radius: 6px;
-  font-size: 15px;
-  transition: 0.3s;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  cursor: pointer;
-}
+ /* botao explorar */
+ .btn_card1_conteudo {
+   border: 2px solid rgb(93, 149, 69);
+   background-color: #238636;
+   font-family: consolas;
+   font-size: 12px !important;
+   color: white;
+   width: 25%;
+   height: 5vh;
+   border-radius: 6px;
+   font-size: 15px;
+   transition: 0.3s;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   cursor: pointer;
+ }
 
-.btn_card1_conteudo:hover {
-  background-color: transparent;
-}
+ .btn_card1_conteudo:hover {
+   background-color: transparent;
+ }
 
-/* Conteudo do card 2 */
-.card2_conteudo {
-  width: 100%;
-  height: 100%;
-  user-select: none;
-}
+ /* Conteudo do card 2 */
+ .card2_conteudo {
+   width: 100%;
+   height: 100%;
+   user-select: none;
+ }
 
-/* lista do conteudo no card 2 */
-.lista_card2_conteudo {
-  width: 100%;
-  height: 100%;
-}
+ /* lista do conteudo no card 2 */
+ .lista_card2_conteudo {
+   width: 100%;
+   height: 100%;
+ }
 
-.lista_card2_conteudo .item_lista_card2 {
-  height: calc(100% / 5);
-  display: flex;
-  justify-content: flex-start;
-  align-items: center;
-  color: white;
-  font-family: consolas;
-  font-size: 12px;
-  font-weight: 500;
-  padding-left: 5px;
-}
+ .lista_card2_conteudo .item_lista_card2 {
+   height: calc(100% / 5);
+   display: flex;
+   justify-content: flex-start;
+   align-items: center;
+   color: white;
+   font-family: consolas;
+   font-size: 12px;
+   font-weight: 500;
+   padding-left: 5px;
+ }
 
  /*@byCovane: Menu containerInicio*/
  #menu {
    width: 80%;
-   height: 10vh;
+   height: 60px;
    background-color: rgb(22, 22, 22);
    box-shadow: 0 0 5px rgb(93, 91, 91);
    border-radius: 12px;
@@ -195,11 +274,11 @@
    color: white;
    font-size: clamp(1em, 1em + 1vw, 1em);
  }
- 
- @media screen and (min-width: 1201px){
-  #containerInicio {
-    height: 100vh;
-  }
+
+ @media screen and (min-width: 1201px) {
+   #containerInicio {
+     height: 1500px;
+   }
  }
 
 
@@ -210,21 +289,20 @@
    }
 
    .btn_card1_conteudo {
-    width: 30%;
-    height: 40px;
+     width: 30%;
+     height: 40px;
    }
 
    #perfil {
-    height: 900px;
+     height: 900px;
    }
 
-   #containerInicio{
-    height: 1100px;
+   #containerInicio {
+     height: 1100px;
    }
 
    #menu {
      font-size: 14px;
-     height: 100px;
    }
 
  }
@@ -236,16 +314,15 @@
      flex-direction: column;
      justify-content: space-around;
      align-items: center;
-     height: 135vh;
+     height: 1400px;
    }
 
    #containerInicio {
-     height: 150vh !important;
+     height: 1400px !important;
    }
 
    #menu {
      width: 95%;
-     height: 100px;
    }
 
    #perfil {
@@ -258,16 +335,24 @@
  @media screen and (max-width: 480px) {
 
    #menu {
-     height: 7vh !important;
-     margin-top: 1vh;
+     height: 100px;
+   }
+
+   .bannerInicio {
+    height: 500px;
+    margin: 20px 0;
+   }
+
+   #inicio {
+    height: 1500px;
    }
 
    #containerInicio {
-     height: auto !important;
+     height: 1500px;
    }
 
    #perfil {
-     height: calc((38vh * 3) + 8vh) !important;
+     height: 1600px;
    }
 
 

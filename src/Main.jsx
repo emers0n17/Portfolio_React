@@ -5,6 +5,7 @@ import './Estilos/styleMain.css'
 import Sobre from "./Componentes/sobre/sobre";
 import Projectos from "./Componentes/projectos/projectos";
 import Trajetoria from "./Componentes/trajetoria/trajetoria";
+import Contacto from "./Componentes/contacto/contacto";
 
 // import { register } from 'swiper/element/bundle'
 // import 'swiper/css';
@@ -24,7 +25,7 @@ export function TituloSecao(props){
 function Espaco(props){
   const estilo = {
     // eslint-disable-next-line react/prop-types
-    height: `${props.height}vh`
+    height: `${props.height}px`
   }
   return <div style={estilo} id="esacoEntreSeccoes"></div>
 }
@@ -50,6 +51,8 @@ class Main extends React.Component {
         <TituloSecao desc="Road Map"/>
         <Espaco height="10" color="blue" />
         <Trajetoria />
+        <TituloSecao desc="Contactos"/>
+        <Contacto />
       </>
     );
   }
