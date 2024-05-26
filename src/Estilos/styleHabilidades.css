@@ -156,18 +156,31 @@
   color: white;
   font-size: clamp(0.3em, 0.5em + 0.5vw, 1em);
   transition: 0.3s;
+  padding: 0 !important;
+  margin: 0 !important;
 }
 
 #btnHabilidades:nth-child(1) {
   width: 15vw;
   height: 100%;
   border-top-left-radius: 12px;
+  border-bottom-right-radius:  0 !important;
+  border-top-right-radius:  0 !important;
+}
+
+#btnHabilidades:nth-child(2) {
+  border-top-right-radius:  0 !important;
+  border-top-left-radius:  0 !important;
+  border-bottom-left-radius:  0 !important;
+  border-bottom-right-radius:  0 !important;
 }
 
 #btnHabilidades:nth-child(3) {
   width: 15vw;
   height: 100%;
   border-top-right-radius: 12px;
+  border-top-left-radius:  0 !important;
+  border-bottom-left-radius:  0 !important;
 }
 
 

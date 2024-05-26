@@ -66,16 +66,16 @@ function Rodape() {
             Contactos
           </li>
           <li className="">
-            <a href="#">GitHub</a>
+            <a href="https://github.com/emers0n17" rel="noopener noreferrer" target="_blank">GitHub</a>
           </li>
           <li className="">
-            <a href="#">Instagram</a>
+            <a href="https://www.instagram.com/emerson_cov/" rel="noopener noreferrer" target="_blank">Instagram</a>
           </li>
           <li className="">
-            <a href="#">Facebook</a>
+            <a href="https://web.facebook.com/emerson.covane.3/" rel="noopener noreferrer" target="_blank">Facebook</a>
           </li>
           <li className="">
-            <a href="#">Linkedin</a>
+            <a href="https://mz.linkedin.com/in/emerson-covane-867937275" rel="noopener noreferrer" target="_blank">Linkedin</a>
           </li>
         </ul>
         <ul className="list-inline">
