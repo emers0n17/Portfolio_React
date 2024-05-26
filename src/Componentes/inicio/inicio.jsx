@@ -45,7 +45,7 @@ function Banner() {
       <img src={background} alt="" />
         <div className="bannerInicio_texto">
 <TypeAnimation sequence={["Ola!...", "Bem vindo ao meu Portfolio...", 1000]} speed={300} />
-         <button id="bannerBotao" className="btn_card1_conteudo"><a href="#perfil">Comecar!</a></button>
+         <button id="bannerBotao" className="btn_card1_conteudo"><a id="boatao_banner_inicio" href="#perfil">Comecar!</a></button>
         </div>
 
     </div>

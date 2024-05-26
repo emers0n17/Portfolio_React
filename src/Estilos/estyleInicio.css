@@ -29,16 +29,16 @@
  #bannerBotao {
   border: 1px solid blueviolet;
   background-color: transparent;
-  color: blueviolet;
   font-weight: 700;
 }
 
-#bannerBotao a {
+#bannerBotao #boatao_banner_inicio {
   text-decoration: none;
   padding: 10px;
+  color: blueviolet;
 }
 
-#bannerBotao a:hover {
+#bannerBotao #boatao_banner_inicio:hover {
   color: white;
 }
 
