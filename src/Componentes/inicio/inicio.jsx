@@ -45,7 +45,7 @@ function Banner() {
       <img src={background} alt="" />
         <div className="bannerInicio_texto">
 <TypeAnimation sequence={["Ola!...", "Bem vindo ao meu Portfolio...", 1000]} speed={300} />
-         <button id="bannerBotao" className="btn_card1_conteudo">Comecar!</button>
+         <button id="bannerBotao" className="btn_card1_conteudo"><a href="#perfil">Comecar!</a></button>
         </div>
 
     </div>
@@ -70,14 +70,14 @@ function InfoInicioReact1(props) {
 //Conteudo do primeiro card
 function Conteudo_card1() {
   return (
-    <div className="card1_conteudo">
+    <div  className="card1_conteudo">
       <h2 className="texto_conteudo_card1">
         Olá <br />
         seja bem-vindo ao meu portfólio pessoal, aqui e um espaco onde voce pode alem de me conhecer, ver as minhas competencias e experiencias como desenvolvedor.
         Vamos?
         <br />
       </h2>
-      <button className="btn_card1_conteudo">Explorar!</button>
+      <button className="btn_card1_conteudo"><a href="#sobreContainer">Explorar!</a></button>
     </div>
   )
 }
