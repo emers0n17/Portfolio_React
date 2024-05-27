@@ -25,8 +25,8 @@ function Projecto(props) {
                        <img className='image_tecnologia ' src={props.tecnologia4} alt={props.alt4} /> 
                 </div>
                 <div className="redirecionamentoProjecto">
-                        <a href="#" target='_blank'><img className="imagen_codigo_redirect" src={github} alt="" />  Codigo</a>
-                        <a href="#" target='_blank'>Demo <img className='imagen_codigo_redirect' src={redirect} alt="" /></a>
+                        <a href={props.link_codigo} target='_blank'><img className="imagen_codigo_redirect" src={github} alt="" />  Codigo</a>
+                        <a href={props.link_demo} target='_blank'>Demo <img className='imagen_codigo_redirect' src={redirect} alt="" /></a>
                 </div>
             </div>
         </div>

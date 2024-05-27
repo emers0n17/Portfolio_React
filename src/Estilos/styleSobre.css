@@ -33,8 +33,11 @@
   content: "";
   width: 150px;
   height: 150px;
-  background-color: rgb(22, 22, 22);
+  background-color: white;
   box-shadow: 0 0 2px rgb(93, 91, 91);
+  background-image: url(../Imagens/man.png);
+  background-repeat: no-repeat;
+  background-position: center;
   border-radius: 10px;
   position: absolute;
   left: calc(150px / 2);

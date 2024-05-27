@@ -46,9 +46,7 @@ function Sobre_conteudo({ selectedSection }) {
       content = (
         <div className="experiencias">
           <ul>
-            <li>Desenvolvedor Frontend na Tech Solutions - 2018-2020</li>
-            <li>Engenheiro de Software na CodeCraft Inc. - 2020-2022</li>
-            <li>Especialista em IA na Innovate AI - 2022-presente</li>
+            <li>Desenvolvedor Frontend na Tech Solutions - 2022-2024</li>
           </ul>
         </div>
       );
@@ -59,15 +57,14 @@ function Sobre_conteudo({ selectedSection }) {
           <ul>
             <li>Visual Studio Code</li>
             <li>Git & GitHub</li>
-            <li>React & Redux</li>
-            <li>Node.js & Express</li>
-            <li>Docker</li>
+            <li>React</li>
+            <li>Node.js</li>
           </ul>
         </div>
       );
       break;
     default:
-      content = <p>Selecione uma seção para saber mais sobre Emerson Covane.</p>;
+      content = <p>Selecione uma seção para saber mais sobre min..</p>;
   }
 
   return (
