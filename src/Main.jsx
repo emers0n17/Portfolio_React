@@ -7,13 +7,6 @@ import Projectos from "./Componentes/projectos/projectos";
 import Trajetoria from "./Componentes/trajetoria/trajetoria";
 import Contacto from "./Componentes/contacto/contacto";
 
-// import { register } from 'swiper/element/bundle'
-// import 'swiper/css';
-// import 'swiper/css/navigation';
-// import 'swiper/css/scrollbar';
-// import 'swiper/css/pagination';
-
-// register();
 
 //Componetes para os titulos
 export function TituloSecao(props){
@@ -35,7 +28,7 @@ class Main extends React.Component {
     return (
       <>
         <Inicio />
-        <Espaco height="300" color="blue" />
+        <Espaco height="10" color="blue" />
         <TituloSecao   desc="Sobre min"/>
         <Sobre />
         <Espaco height="10" color="blue" />
