@@ -38,14 +38,14 @@ class Main extends React.Component {
         <Espaco height="10" color="blue" />
         <Habilidades />
         <Espaco height="10" color="blue" />
-        <TituloSecao desc="Meus projectos"/>
+        <TituloSecao height="200" desc="Meus projectos"/>
         <Espaco height="10" color="blue" />
         <Projectos />
         <Espaco height="10" color="blue" />
-        <TituloSecao desc="Road Map"/>
+        <TituloSecao height="200" desc="Road Map"/>
         <Espaco height="10" color="blue" />
         <Trajetoria />
-        <TituloSecao desc="Contactos"/>
+        <TituloSecao height="200" desc="Contactos"/>
         <Contacto />
       </>
     );
