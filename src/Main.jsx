@@ -31,10 +31,10 @@ class Main extends React.Component {
       <>
         <Inicio />
         <Espaco height="10" color="blue" />
-        <TituloSecao height="100" desc="Sobre"/>
+        <TituloSecao height="500" desc="Sobre"/>
         <Sobre />
         <Espaco height="100" color="blue" />
-        <TituloSecao desc="Minhas habilidades"/>
+        <TituloSecao height="200" desc="Minhas habilidades"/>
         <Espaco height="10" color="blue" />
         <Habilidades />
         <Espaco height="10" color="blue" />
