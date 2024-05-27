@@ -33,7 +33,7 @@ class Main extends React.Component {
         <Espaco height="10" color="blue" />
         <TituloSecao height="100" desc="Sobre"/>
         <Sobre />
-        <Espaco height="10" color="blue" />
+        <Espaco height="100" color="blue" />
         <TituloSecao desc="Minhas habilidades"/>
         <Espaco height="10" color="blue" />
         <Habilidades />
