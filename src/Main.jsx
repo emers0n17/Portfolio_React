@@ -1,3 +1,4 @@
+/* eslint-disable react/prop-types */
 import React from "react";
 import Inicio from "./Componentes/inicio/inicio";
 import Habilidades from "./Componentes/habilidades/habilidades";
@@ -11,7 +12,8 @@ import Contacto from "./Componentes/contacto/contacto";
 //Componetes para os titulos
 export function TituloSecao(props){
   // eslint-disable-next-line react/prop-types
-  return <h1 id="tituloSecao">{props.desc}</h1>
+  const style = {height: `${props.height}px`}
+  return <h1 style={style} id="tituloSecao">{props.desc}</h1>
 }
 
 //Componente para poder dar espaco
@@ -29,7 +31,7 @@ class Main extends React.Component {
       <>
         <Inicio />
         <Espaco height="10" color="blue" />
-        <TituloSecao desc="Sobre"/>
+        <TituloSecao height="100" desc="Sobre"/>
         <Sobre />
         <Espaco height="10" color="blue" />
         <TituloSecao desc="Minhas habilidades"/>
