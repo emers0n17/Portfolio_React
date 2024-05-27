@@ -1,11 +1,15 @@
 /* eslint-disable react/prop-types */
 import React, { useState } from "react";
 import { TypeAnimation } from "react-type-animation";
+
+// Importar imagens
 import facebook from "../../Imagens/facebook-color-svgrepo-com.svg";
 import instagram from "../../Imagens/instagram-1-svgrepo-com.svg";
 import github from "../../Imagens/github-142-svgrepo-com.svg";
 import linkedin from "../../Imagens/linkedin-svgrepo-com.svg";
 import background from '../../Imagens/background.webp';
+
+// Importar CSS
 import "../../Estilos/estyleInicio.css";
 
 function Menu() {
