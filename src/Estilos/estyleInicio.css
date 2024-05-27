@@ -305,11 +305,44 @@ body {
   z-index: 2;
 }
 
-@media screen and (min-width: 1201px) {
-  #containerInicio {
-    height: 1500px;
+@media screen and (max-width: 700px) {
+  #menu .menu-items {
+    position: absolute;
+    top: 100px;
+    left: 10px;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 10px;
+    width: 50%;
+    height: 200px;
+    display: none;
+    gap: 0;
+    padding: 20px;
+    background-color: rgb(22, 22, 22);
+    box-shadow: 0 0 2px rgb(193, 191, 191);
+    z-index: 2;
+  }
+
+  #menu .menu-items.open {
+    display: flex;
+  }
+
+  #menu .hamburger {
+    display: flex;
   }
 }
+
+@media screen and (max-width: 480px) {
+  #menu .menu-items {
+    top: 60px;
+    width: 80%;
+  }
+
+  #menu a {
+    font-size: 12px !important;
+  }
+}
+
 
 @media screen and (max-width: 1200px) {
   #containerInicio {
@@ -347,38 +380,8 @@ body {
     height: 1400px;
   }
 
-  #menu {
-    width: 100%;
-    border-radius: 0;
-  }
-
   .bannerInicio {
     box-shadow: none;
-  }
-
-  #menu .menu-items {
-    position: absolute;
-    top: 100px;
-    left: 10px;
-    flex-direction: column;
-    align-items: flex-start;
-    border-radius: 10px;
-    width: 50%;
-    height: 200px;
-    display: none;
-    gap: 0;
-    padding: 20px;
-    background-color: rgb(22, 22, 22);
-    box-shadow: 0 0 2px rgb(193, 191, 191);
-    z-index: 2;
-  }
-
-  #menu .menu-items.open {
-    display: flex;
-  }
-
-  #menu .hamburger {
-    display: flex;
   }
 
   #perfil {
@@ -388,13 +391,6 @@ body {
 }
 
 @media screen and (max-width: 480px) {
-  #menu {
-    height: 100px;
-  }
-
-  #menu a {
-    font-size: 12px !important;
-  }
 
   .bannerInicio {
     height: 500px;
