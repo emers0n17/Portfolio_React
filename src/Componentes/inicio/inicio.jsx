@@ -137,7 +137,7 @@ class Inicio extends React.Component {
       <div id="inicio">
         <div id="containerInicio">
 
-          <Banner />
+        <Banner />
           <Menu />
           <div id="perfil">
             <InfoInicioReact1 conteudo={<Conteudo_card1 />} titulo={"Bem vindo"} />

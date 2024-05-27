@@ -51,7 +51,7 @@ body {
   border: 1px solid blueviolet;
   background-color: transparent;
   font-weight: 700;
-  transition: background-color 0.3s; /* Adicionada transição */
+  transition: 0.3s; /* Adicionada transição */
 }
 
 #bannerBotao #boatao_banner_inicio {
@@ -420,7 +420,7 @@ align-items: center;
   }
 
   #inicio {
-      height: 1500px;
+      height: 1800px;
   }
 
   #containerInicio {
