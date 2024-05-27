@@ -1,23 +1,21 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    user-select: none !important;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none; /* Removido o !important */
 }
 
 html {
   scroll-behavior: smooth;
-  width: auto !important;
-  height: auto !important;
-  min-width: 460px !important;
+  width: 100%; /* Ajuste para garantir a responsividade */
+  height: 100%; /* Ajuste para garantir a responsividade */
+  min-width: 320px; /* Mudado de 460px para 320px, padrão mínimo para dispositivos móveis */
 }
-  
-  body {
-    height: auto !important;
-    background-color: white;
-    display: flex;
-    width: 100%;
-    flex-direction: column;
-  }
 
-  
+body {
+  min-height: 100vh; /* Garantir que o body ocupe pelo menos a altura da viewport */
+  background-color: white;
+  display: flex;
+  width: 100%;
+  flex-direction: column;
+}
